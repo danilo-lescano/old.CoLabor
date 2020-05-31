@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title><%= title %></title>
+</head>
+<body>
+    <% for(var i = 0; i < items.length; i++) { %>
+        <li><%= items[i].desc %></li>
+    <% } %>
+    <form action="/add" method="post">
+        <input type="text" name="newItem">
+        <input type="submit">
+    </form>
+</body>
+</html>
