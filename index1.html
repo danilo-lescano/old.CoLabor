@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Co-Labor</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="resources/css/layout.css"></link>
+</head>
+<body>
+    <div class="inner-body">
+        <div class="carrossel">
+            <div id="carrossel" class="carrossel-inner">
+                <img class="carrossel-img" src="resources/image/IMG_6717.jpg">
+                <img class="carrossel-img" src="resources/image/IMG_6717.jpg">
+                <img class="carrossel-img" src="resources/image/IMG_6717.jpg">
+            </div>
+            
+            <div id="carrossel-balls" class="carrossel-balls"></div>
+            <div class="carrossel-next left" onclick="manualCarrossel(false);">
+                <span class="carrossel-arrow arrow-left"></span>
+            </div>
+            <div class="carrossel-next right" onclick="manualCarrossel(true);">
+                <span class="carrossel-arrow arrow-right"></span>
+            </div>
+        </div>
+
+        <div class="navbar">
+            <div class="navbar-title">
+                <div class="navbar-title-logo-wrapper">
+                    <img class="navbar-title-logo" src="resources/image/Logos/Marca_Co_Labor_transparente2.svg">
+                </div>
+                <span class="navbar-title-titulo">ARTE, DESIGN, CO-CRIAÇÃO & ATIVISMO</span>
+                <div class="navbar-title-logo-wrapper">
+                    <img class="navbar-title-logo" src="resources/image/Icones/Icones_1.svg">
+                </div>
+            </div>
+            <div class="navbar-itens">
+                <a class="navbar-itens-a ativo" href="#">
+                    <span class="navbar-itens-a-normal">Agenda</span>
+                    <span class="navbar-itens-a-bold">Agenda</span>
+                </a>
+                <a class="navbar-itens-a" href="#">
+                    <span class="navbar-itens-a-normal">Produtos</span>
+                    <span class="navbar-itens-a-bold">Produtos</span>
+                </a>
+                <a class="navbar-itens-a" href="#">
+                    <span class="navbar-itens-a-normal">Contato</span>
+                    <span class="navbar-itens-a-bold">Contato</span>
+                </a>
+                <a class="navbar-itens-a" href="#">
+                    <span class="navbar-itens-a-normal">Sobre</span>
+                    <span class="navbar-itens-a-bold">Sobre</span>
+                </a>
+                <a class="navbar-itens-a" href="#">
+                    <span class="navbar-itens-a-normal">Cadastro/Login</span>
+                    <span class="navbar-itens-a-bold">Cadastro/Login</span>
+                </a>
+            </div>
+        </div>
+
+        <div></div>
+
+        <div id="explore" class="explore none">
+            <div class="explore-bg"></div>
+            <div id="yellowBG" class="explore-bg yellow none zindex"></div>
+
+            <div id="exploreForm" class="explore-hidden explore-form none">
+                <div class="explore-item-wrapper explore-form">
+                    <span style="width: 8%;" class="explore-item-wrapper-span">
+                        <img src="resources/image/Icones/Icones_3.svg">
+                        <span class="explore-btn clickable"></span>
+                    </span>
+                    <input class="explore-input" type="text">
+                </div>
+            </div>
+
+            <div id="exploreBtns" class="explore-hidden">
+                <div class="explore-item-wrapper">
+                    <span style="width: 20%;" class="explore-item-wrapper-span">
+                        <img style="filter:invert();" src="resources/image/Icones/Icones_3.svg">
+                        <span class="explore-pesquisar">Pesquisar</span>
+                        <span class="explore-btn clickable" onclick="showSearch();"></span>
+                    </span>
+                </div>
+                <div class="explore-item-wrapper">
+                    <div class="explore-texto-wrapper">
+                        <span class="explore-texto-1">Filtre por</span>
+                        <br>
+                        <span class="explore-texto-2">LABORATÓRIOS</span>
+                    </div>
+                </div>
+                <div class="explore-item-wrapper">
+                    <span class="explore-item-wrapper-span">
+                        <img class="" src="resources/image/Logos/logos_laboratorios_cofa1_w.svg">
+                        <span class="explore-btn clickable"></span>
+                    </span>
+                    <span class="explore-item-wrapper-span">
+                        <img style="width: 175%;" src="resources/image/Logos/logos_laboratorios_colaboratorio1_w.svg">
+                        <span class="explore-btn clickable"></span>
+                    </span>
+                    <span class="explore-item-wrapper-span">
+                        <img class="" src="resources/image/Logos/logos_laboratorios_colaboraçao1_w.svg">
+                        <span class="explore-btn clickable"></span>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="cards-wrapper">
+            <div class="explorer-btn" onclick="explore();">EXPLORE! <span id="explore-arrow" class="arrow"></span></div>
+            <div class="card-box">
+                <img class="card-box-img" src="resources/image/Capturar1.PNG">
+                <span class="card-box-txt">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.
+                </span>
+                <span class="card-box-txt black">
+                    Por Felipe Takei
+                </span>
+            </div>
+            <div class="card-box">
+                <img class="card-box-img" src="resources/image/Capturar4.PNG">
+                <span class="card-box-txt">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.
+                </span>
+                <span class="card-box-txt black">
+                    Por Vitória dos Reis
+                </span>
+            </div>
+            <div class="card-box">
+                <img class="card-box-img" src="resources/image/Capturar2.PNG">
+                <span class="card-box-txt">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.
+                </span>
+                <span class="card-box-txt black">
+                    Por Paulo Domingos
+                </span>
+            </div>
+            <div class="card-box">
+                <img class="card-box-img" src="resources/image/Capturar3.PNG">
+                <span class="card-box-txt">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.
+                </span>
+                <span class="card-box-txt black">
+                    Por Eduardo Azevedo
+                </span>
+            </div>
+            
+            <div class="card-padding" style="padding-bottom: calc(120% + 250px);"></div>
+        </div>
+
+        <div class="footer"></div>
+
+    </div>
+</body>
+</html>
+<script type="text/javascript" src="resources/javascript/javascript.js"></script>
+<script>
+
+    //EXPLORE BUTTON
+    var exploreflag = false;
+    function explore() {
+        if(!exploreflag) {
+            document.getElementById("explore").classList.remove("none");
+            document.getElementById("explore-arrow").classList.add("rotate");
+            reverseShowSearch();
+        }
+        else {
+            document.getElementById("explore").classList.add("none");
+            document.getElementById("explore-arrow").classList.remove("rotate");
+        }
+        exploreflag = !exploreflag;
+    }
+    function showSearch() {
+        document.getElementById("yellowBG").classList.remove("none");
+        
+        setTimeout(() => {
+            document.getElementById("explore").style.backgroundColor = "#FEBA12";
+            document.getElementById("exploreForm").classList.remove("none");
+            document.getElementById("exploreBtns").classList.add("none");
+            document.getElementById("yellowBG").classList.remove("zindex");
+            requestAnimationFrame(()=>document.getElementById("exploreForm").classList.add("visible"));
+        }, 400);
+    }
+    function reverseShowSearch() {
+        document.getElementById("yellowBG").classList.add("none");
+        document.getElementById("explore").style.backgroundColor = "black";
+        document.getElementById("exploreForm").classList.remove("visible");
+        document.getElementById("yellowBG").classList.add("zindex");
+        document.getElementById("exploreForm").classList.add("none");
+        document.getElementById("exploreBtns").classList.remove("none");
+    }
+
+    //CARROSSEL LOOP
+    var carrossel = document.getElementById("carrossel");
+    var carrosselIndex = 0;
+    var carrosselBalls = [];
+    var seedCarrossel = Math.random();
+    for(var i=0; i<carrossel.childElementCount; i++) {
+        carrosselBalls[i] = document.createElement("div");
+        carrosselBalls[i].classList.add("carrossel-ball");
+        document.getElementById("carrossel-balls").appendChild(carrosselBalls[i]);
+    }
+    carrosselBalls[0].classList.add("blackBG");
+    function loopCarrossel(forward) {
+        carrosselBalls[carrosselIndex].classList.remove("blackBG");
+        if(forward == undefined || (forward != undefined && forward))
+            carrosselIndex = ++carrosselIndex % carrossel.childElementCount;
+        else
+            carrosselIndex = carrosselIndex == 0 ? carrossel.childElementCount - 1 : carrosselIndex - 1;
+        var X = (100/carrossel.childElementCount) * carrosselIndex;
+        carrossel.style.transform = "translateX(-" + X + "%)";
+        carrosselBalls[carrosselIndex].classList.add("blackBG");
+        let seed = seedCarrossel;
+        setTimeout(() => {
+            if(seed == seedCarrossel) {
+                seedCarrossel = Math.random();
+                loopCarrossel();
+            }
+        }, 5000);
+    }
+    setTimeout(() => {
+        loopCarrossel();
+    }, 5000);
+    function manualCarrossel(forward) {
+        seedCarrossel = Math.random();
+        loopCarrossel(forward);
+    }
+</script>
