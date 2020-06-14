@@ -5,6 +5,8 @@ var bodyParser = require('body-parser');
 var app = express();
 
 var controllers = [
+    'About',
+    'Contact',
     'Home',
 ];
 
@@ -20,6 +22,9 @@ app.use(express.static(path.join(__dirname, 'resources')));
 for(let i = 0; i < controllers.length; i++) {
     app.use(require(path.join(__dirname, 'controllers/' + controllers[i] + 'Controller')));
 }
+app.get('/', (req, res)=>{
+    res.redirect('/Home');
+});
 
 
 //start the server

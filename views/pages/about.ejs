@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Co-Labor</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/layout.css"></link>
+</head>
+<body>
+    <div class="inner-body">
+        <div class="carrossel">
+            <div id="carrossel" class="carrossel-inner">
+                <img class="carrossel-img" src="../image/IMG_6717.jpg">
+                <img class="carrossel-img" src="../image/IMG_6717.jpg">
+                <img class="carrossel-img" src="../image/IMG_6717.jpg">
+            </div>
+            
+            <div id="carrossel-balls" class="carrossel-balls"></div>
+            <div class="carrossel-next left" onclick="manualCarrossel(false);">
+                <span class="carrossel-arrow arrow-left"></span>
+            </div>
+            <div class="carrossel-next right" onclick="manualCarrossel(true);">
+                <span class="carrossel-arrow arrow-right"></span>
+            </div>
+        </div>
+
+        <div class="navbar-margin"></div>
+        <div id="navbarbg" class="navbarbg"></div>
+
+        <div id="navbar" class="navbar">
+            <div class="navbar-title">
+                <div class="navbar-title-logo-wrapper">
+                    <img class="navbar-title-logo" src="../image/Logos/Marca_Co_Labor_transparente2.svg">
+                </div>
+                <span class="navbar-title-titulo">ARTE, DESIGN, CO-CRIAÇÃO & ATIVISMO</span>
+                <div class="navbar-title-logo-wrapper">
+                    <img class="navbar-title-logo" src="../image/Icones/Icones_1.svg">
+                </div>
+            </div>
+            <div class="navbar-itens">
+                <a class="navbar-itens-a" href="/home">
+                    <span class="navbar-itens-a-normal">Agenda</span>
+                    <span class="navbar-itens-a-bold">Agenda</span>
+                </a>
+                <a class="navbar-itens-a" href="#">
+                    <span class="navbar-itens-a-normal">Produtos</span>
+                    <span class="navbar-itens-a-bold">Produtos</span>
+                </a>
+                <a class="navbar-itens-a" href="/contact">
+                    <span class="navbar-itens-a-normal">Contato</span>
+                    <span class="navbar-itens-a-bold">Contato</span>
+                </a>
+                <a class="navbar-itens-a ativo" href="/about">
+                    <span class="navbar-itens-a-normal">Sobre</span>
+                    <span class="navbar-itens-a-bold">Sobre</span>
+                </a>
+                <a class="navbar-itens-a" href="#">
+                    <span class="navbar-itens-a-normal">Cadastro/Login</span>
+                    <span class="navbar-itens-a-bold">Cadastro/Login</span>
+                </a>
+            </div>
+        </div>
+
+        <div id="about" class="about-wrapper-1">
+            <h1 class="about-h1 aboutBold">Quem somos</h1>
+            <span class="about-subtitle">Manifesto Coletivo Labor</span>
+            <p class="about-p">Somos um grupo interdisciplinar que busca unir conhecimentos de arte, design, urbanismo e psicologia com o objetivo de ampliar outras possibilidades de acesso a esses campos do saber, colaboraborando para o fortalecimento da cultura e de agentes disseminadores dessa (espaços culturais, artistas, acadêmicos, etc) e, assim, o direito à cidade.</p>
+            <span class="aboutBold about-mini-menu">
+                <a href="#deondesurgimos" class="about-ancora" onclick="AboutMiniMenu(this);">DE ONDE SURGIMOS?</a> / 
+                <a href="#oquebuscamos" class="about-ancora" onclick="AboutMiniMenu(this);">O QUE BUSCAMOS?</a> / 
+                <a href="#oquefazemos" class="about-ancora" onclick="AboutMiniMenu(this);">O QUE FAZEMOS?</a> / 
+                <a href="#nossaequipe" class="about-ancora" onclick="AboutMiniMenu(this);">NOSSA EQUIPE</a> / 
+                <a href="#colaboradores" class="about-ancora" onclick="AboutMiniMenu(this);">COLABORADORES</a>
+            </span>
+            <h2 id="deondesurgimos" class="about-h2 aboutBold">DE ONDE<br>SURGIMOS?</h2>
+            <p class="about-p">Como consequência dos eventos do ano de 2013. Nossas cidades, e o seu povo, passaram por uma década de protestos, questionamentos e decepções. Os meios, antes consolidados como disseminadores da informação e conhecimento, estão atualmente cada vez mais distantes e desacreditados pela população. Vindo de contexto acadêmico, um polo de disseminação de conhecimento que de certa forma se afastou da população e perdeu, como consequência, poder de influência. Acreditamos que novos tempos demandam novas abordagens. Nosso grupo tem como valores a democratização do conhecimento, seja pelo incentivo à produção cultural e o direito à cidade ou ao uso da cultura digital e a prática do design aberto retomando espaços “perdidos”.</p>
+            <h2 id="oquebuscamos" class="about-h2 aboutBold">O QUE<br>BUSCAMOS?</h2>
+            <span class="aboutEm">
+                Construir, impulsionar e<br>
+                sustentar <span class="aboutBold">COMUNIDADES<br>
+                DE APRENDIZAGEM.<br><br></span>
+                Promover e fomentar a criação de projetos culturais e<br>
+                eventos, de ARTE, <span class="aboutBold">DESIGN E PSICOLOGIA</span> que<br>
+                tragam a discussão ou impactem na luta pelo<br>
+                direito a cidade.<br><br>
+                <span class="aboutBold">EXPERIMENTAR,<br>
+                MELHORAR E VALIDAR<br></span>
+                metodologias de trabalhos<br>
+                colaborativos em vários<br>
+                níveis de atuação<br><br>
+                Abrir espaços de reflexão<br>
+                crítica a cerca das<br>
+                <span class="aboutBold">TECNOLOGIAS DIGITAIS,<br></span>
+                e como isso impacta a<br>
+                sociedade e a cultura.<br>
+            </span>
+            <h2 id="oquefazemos" class="about-h2 aboutBold">O QUE<br>FAZEMOS?</h2>
+        </div>
+        <div class="about-wrapper-2">
+            <div class="about-card">
+                <div class="about-card-text">
+                    Laboratório com foco em<br>
+                    <span class="aboutBold">PRODUÇÃO E CO-CRIAÇÃO<br>
+                    DE TODO TIPO DE DESIGN</span>
+                    <p class="about-p-card">Equipado com um conjunto de ferramentas flexíveis controladas por computador que cobrem diversas escalas de tamanho e diversos materiais diferentes, com o objetivo de fazer "quase tudo". Buscamos nos identificar com as culturas Maker de DIY - Faça você mesmo e do Design aberto.</p>
+                    <div class="about-mini-wrapper">
+                        <div class="about-mini">
+                            <img src="../image/placeholder1.svg">
+                            <span>Identidade Visual</span>
+                        </div>
+                        <div class="about-mini">
+                            <img src="../image/placeholder2.svg">
+                            <span>Prototipagem</span>
+                        </div>
+                        <div class="about-mini">
+                            <img src="../image/placeholder3.svg">
+                            <span>Produto</span>
+                        </div>
+                        <div class="about-mini">
+                            <img src="../image/placeholder4.svg">
+                            <span>Fabricação Digital</span>
+                        </div>
+                        <div class="about-mini">
+                            <img src="../image/placeholder5.svg">
+                            <span>Design</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-card-img">
+                    <img src="../image/Logos/logos_laboratorios_cofa1.svg">
+                </div>
+            </div>
+            <div class="about-card">
+                <div class="about-card-text">
+                    <p class="about-p-card">Laboratório de <span class="aboutBold">EXPERIMENTAÇÃO, PESQUISA E PRODUÇÃO</span> com foco no desenvolvimento de conteúdo criativo e cultural.</p>
+                    <div class="about-mini-wrapper">
+                        <div class="about-mini">
+                            <img src="../image/placeholder6.svg">
+                            <span>Audiovisual</span>
+                        </div>
+                        <div class="about-mini">
+                            <img src="../image/placeholder7.svg">
+                            <span>Editorial</span>
+                        </div>
+                        <div class="about-mini">
+                            <img src="../image/placeholder8.svg">
+                            <span>Produção Artística</span>
+                        </div>
+                        <div class="about-mini">
+                            <img src="../image/placeholder9.svg">
+                            <span>Pesquisa</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-card-img">
+                    <img src="../image/Logos/logos_laboratorios_colaboratorio1.svg">
+                </div>
+            </div>
+            <div class="about-card">
+                <div class="about-card-text">
+                    <p class="about-p-card">Laboratório de inteligência coletiva para a participação democrática, busca o uso da cidade como um direito através de ações de <span class="aboutBold">CAPACITAÇÃO E ATIVISMO URBANO.</span></p>
+                    <div class="about-mini-wrapper">
+                        <div class="about-mini">
+                            <img src="../image/placeholder1.svg">
+                            <span>Pedagogia Urbana</span>
+                        </div>
+                        <div class="about-mini">
+                            <img src="../image/placeholder2.svg">
+                            <span>Ativação Urbana</span>
+                        </div>
+                        <div class="about-mini">
+                            <img src="../image/placeholder3.svg">
+                            <span>Eventos & Oficinas</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-card-img">
+                    <img src="../image/Logos/logos_laboratorios_colaboraçao1.svg">
+                </div>
+            </div>
+        </div>
+        <div class="about-wrapper-1">
+            <img stylye="width: 100%;" src="../image/placeholder10.png">
+        </div>
+        <div class="about-wrapper-3">
+            <h2 id="nossaequipe" class="about-h2 aboutBold">NOSSA EQUIPE</h2>
+            <P class="about-p">
+                <span class="about-pessoa clickable" onmouseover="onhoverPessoaCard(0)" onmouseout="onhoveroutPessoaCard(0)">Vitória dos Reis</span> / 
+                <span class="about-pessoa clickable" onmouseover="onhoverPessoaCard(1)" onmouseout="onhoveroutPessoaCard(1)">Gustavo Ignácio</span> / 
+                <span class="about-pessoa clickable" onmouseover="onhoverPessoaCard(2)" onmouseout="onhoveroutPessoaCard(2)">Felipe Takei</span> / 
+                <span class="about-pessoa clickable" onmouseover="onhoverPessoaCard(3)" onmouseout="onhoveroutPessoaCard(3)">Eduardo Azevedo</span> / 
+                <span class="about-pessoa clickable" onmouseover="onhoverPessoaCard(4)" onmouseout="onhoveroutPessoaCard(4)">Paulo Domingos</span>
+            </P>
+            <div class="about-pessoa-card-wrapper">
+                <div class="about-pessoa-card">
+                    <img class="about-pessoa-card-img" src="../image/placeholder11.png">
+                    <div class="about-pessoa-card-text">
+                        <span class="aboutBold">Vitória dos Reis</span><br>
+                        -Direção de Criação<br>
+                        -Planejamento de ações<br>
+                        -Pesquisa<br>
+                        <div class="footer-rede-social">
+                            <a class="footer-itens-a" href="#">
+                                <span class="footer-itens-a-normal">Instagram</span>
+                                <span class="footer-itens-a-bold b2">Instagram</span>
+                            </a>|
+                            <a class="footer-itens-a" href="#">
+                                <span class="footer-itens-a-normal">Twitter</span>
+                                <span class="footer-itens-a-bold b2">Twitter</span>
+                            </a>|
+                            <a class="footer-itens-a" href="#">
+                                <span class="footer-itens-a-normal">Youtube</span>
+                                <span class="footer-itens-a-bold b2">Youtube</span>
+                            </a>|
+                            <a class="footer-itens-a" href="#">
+                                <span class="footer-itens-a-normal">Behance</span>
+                                <span class="footer-itens-a-bold b2">Behance</span>
+                            </a>|
+                            <a class="footer-itens-a" href="#">
+                                <span class="footer-itens-a-normal">Facebook</span>
+                                <span class="footer-itens-a-bold b2">Facebook</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-pessoa-card none">
+                    <img class="about-pessoa-card-img" src="../image/placeholder11.png">
+                    <div class="about-pessoa-card-text">
+                        <span class="aboutBold">Gustavo Ignácio</span><br>
+                        -Direção de Criação<br>
+                        -Planejamento de ações<br>
+                        -Pesquisa<br>
+                        <div class="footer-rede-social">
+                            <a class="footer-itens-a" href="#">
+                                <span class="footer-itens-a-normal">Instagram</span>
+                                <span class="footer-itens-a-bold b2">Instagram</span>
+                            </a>|
+                            <a class="footer-itens-a" href="#">
+                                <span class="footer-itens-a-normal">Twitter</span>
+                                <span class="footer-itens-a-bold b2">Twitter</span>
+                            </a>|
+                            <a class="footer-itens-a" href="#">
+                                <span class="footer-itens-a-normal">Youtube</span>
+                                <span class="footer-itens-a-bold b2">Youtube</span>
+                            </a>|
+                            <a class="footer-itens-a" href="#">
+                                <span class="footer-itens-a-normal">Behance</span>
+                                <span class="footer-itens-a-bold b2">Behance</span>
+                            </a>|
+                            <a class="footer-itens-a" href="#">
+                                <span class="footer-itens-a-normal">Facebook</span>
+                                <span class="footer-itens-a-bold b2">Facebook</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-pessoa-card none">
+                    <img class="about-pessoa-card-img" src="../image/placeholder11.png">
+                    <div class="about-pessoa-card-text">
+                        <span class="aboutBold">Felipe Takei</span><br>
+                        -Direção de Criação<br>
+                        -Planejamento de ações<br>
+                        -Pesquisa<br>
+                        <div class="footer-rede-social">
+                            <a class="footer-itens-a" href="#">
+                                <span class="footer-itens-a-normal">Instagram</span>
+                                <span class="footer-itens-a-bold b2">Instagram</span>
+                            </a>|
+                            <a class="footer-itens-a" href="#">
+                                <span class="footer-itens-a-normal">Twitter</span>
+                                <span class="footer-itens-a-bold b2">Twitter</span>
+                            </a>|
+                            <a class="footer-itens-a" href="#">
+                                <span class="footer-itens-a-normal">Youtube</span>
+                                <span class="footer-itens-a-bold b2">Youtube</span>
+                            </a>|
+                            <a class="footer-itens-a" href="#">
+                                <span class="footer-itens-a-normal">Behance</span>
+                                <span class="footer-itens-a-bold b2">Behance</span>
+                            </a>|
+                            <a class="footer-itens-a" href="#">
+                                <span class="footer-itens-a-normal">Facebook</span>
+                                <span class="footer-itens-a-bold b2">Facebook</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-pessoa-card none">
+                    <img class="about-pessoa-card-img" src="../image/placeholder11.png">
+                    <div class="about-pessoa-card-text">
+                        <span class="aboutBold">Eduardo Azevedo</span><br>
+                        -Direção de Criação<br>
+                        -Planejamento de ações<br>
+                        -Pesquisa<br>
+                        <div class="footer-rede-social">
+                            <a class="footer-itens-a" href="#">
+                                <span class="footer-itens-a-normal">Instagram</span>
+                                <span class="footer-itens-a-bold b2">Instagram</span>
+                            </a>|
+                            <a class="footer-itens-a" href="#">
+                                <span class="footer-itens-a-normal">Twitter</span>
+                                <span class="footer-itens-a-bold b2">Twitter</span>
+                            </a>|
+                            <a class="footer-itens-a" href="#">
+                                <span class="footer-itens-a-normal">Youtube</span>
+                                <span class="footer-itens-a-bold b2">Youtube</span>
+                            </a>|
+                            <a class="footer-itens-a" href="#">
+                                <span class="footer-itens-a-normal">Behance</span>
+                                <span class="footer-itens-a-bold b2">Behance</span>
+                            </a>|
+                            <a class="footer-itens-a" href="#">
+                                <span class="footer-itens-a-normal">Facebook</span>
+                                <span class="footer-itens-a-bold b2">Facebook</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-pessoa-card none">
+                    <img class="about-pessoa-card-img" src="../image/placeholder11.png">
+                    <div class="about-pessoa-card-text">
+                        <span class="aboutBold">Paulo Domingos</span><br>
+                        -Direção de Criação<br>
+                        -Planejamento de ações<br>
+                        -Pesquisa<br>
+                        <div class="footer-rede-social">
+                            <a class="footer-itens-a" href="#">
+                                <span class="footer-itens-a-normal">Instagram</span>
+                                <span class="footer-itens-a-bold b2">Instagram</span>
+                            </a>|
+                            <a class="footer-itens-a" href="#">
+                                <span class="footer-itens-a-normal">Twitter</span>
+                                <span class="footer-itens-a-bold b2">Twitter</span>
+                            </a>|
+                            <a class="footer-itens-a" href="#">
+                                <span class="footer-itens-a-normal">Youtube</span>
+                                <span class="footer-itens-a-bold b2">Youtube</span>
+                            </a>|
+                            <a class="footer-itens-a" href="#">
+                                <span class="footer-itens-a-normal">Behance</span>
+                                <span class="footer-itens-a-bold b2">Behance</span>
+                            </a>|
+                            <a class="footer-itens-a" href="#">
+                                <span class="footer-itens-a-normal">Facebook</span>
+                                <span class="footer-itens-a-bold b2">Facebook</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h2 id="colaboradores" class="about-h2 aboutBold">CO-LABORADORES</h2>
+            <img style="width: 30%" src="../image/placeholder12.png">
+            <img style="width: 30%" src="../image/placeholder13.png">
+            <img style="width: 30%" src="../image/placeholder14.png">
+        </div>
+
+        <div class="footer">
+            <div class="footer-img-wrapper">
+                <img class="footer-img" src="../image/Logos/Marca_Co_Labor_transparente1.svg">
+            </div>
+            <div class="footer-box left">
+                <a class="footer-itens-a ativo" href="#">
+                    <span class="footer-itens-a-normal">Loja</span>
+                    <span class="footer-itens-a-bold">Loja</span>
+                </a>
+                <br><br>
+                <a class="footer-itens-a" href="#">
+                    <span class="footer-itens-a-normal">Conteúdo</span>
+                    <span class="footer-itens-a-bold">Conteúdo</span>
+                </a>
+                <br><br>
+                <a class="footer-itens-a" href="#">
+                    <span class="footer-itens-a-normal">Agenda</span>
+                    <span class="footer-itens-a-bold">Agenda</span>
+                </a>
+            </div>
+            <div class="footer-box left">
+                <a class="footer-itens-a ativo" href="#">
+                    <span class="footer-itens-a-normal">Sobre</span>
+                    <span class="footer-itens-a-bold">Sobre</span>
+                </a>
+                <br><br>
+                <a class="footer-itens-a" href="#">
+                    <span class="footer-itens-a-normal">Contato</span>
+                    <span class="footer-itens-a-bold">Contato</span>
+                </a>
+            </div>
+            <div class="footer-box right">
+                <span class="footer-text">Faça seu Cadastro:</span>
+                <br><br>
+                <input class="footer-input barra" placeholder="Email" type="text">
+                <br><br>
+                <input class="footer-input barra" placeholder="Senha" type="password">
+                <br><br>
+                <a class="footer-itens-a ativo" style="float: right;" href="#">
+                    <span class="footer-itens-a-normal">OK</span>
+                    <span class="footer-itens-a-bold b2">OK</span>
+                </a>
+            </div>
+            <div class="footer-break"></div>
+            
+            <div class="footer-rede-social">
+                <a class="footer-itens-a" href="#">
+                    <span class="footer-itens-a-normal">Instagram</span>
+                    <span class="footer-itens-a-bold b2">Instagram</span>
+                </a> |
+                <a class="footer-itens-a" href="#">
+                    <span class="footer-itens-a-normal">Twitter</span>
+                    <span class="footer-itens-a-bold b2">Twitter</span>
+                </a> |
+                <a class="footer-itens-a" href="#">
+                    <span class="footer-itens-a-normal">Youtube</span>
+                    <span class="footer-itens-a-bold b2">Youtube</span>
+                </a> |
+                <a class="footer-itens-a" href="#">
+                    <span class="footer-itens-a-normal">Behance</span>
+                    <span class="footer-itens-a-bold b2">Behance</span>
+                </a> |
+                <a class="footer-itens-a" href="#">
+                    <span class="footer-itens-a-normal">Facebook</span>
+                    <span class="footer-itens-a-bold b2">Facebook</span>
+                </a>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
+<script type="text/javascript" src="../javascript/javascript.js"></script>
+<script>
+    //EXPLORE BUTTON
+    var exploreflag = false;
+    function explore() {
+        if(!exploreflag) {
+            document.getElementById("explore").classList.remove("none");
+            document.getElementById("explore-arrow").classList.add("rotate");
+            reverseShowSearch();
+        }
+        else {
+            document.getElementById("explore").classList.add("none");
+            document.getElementById("explore-arrow").classList.remove("rotate");
+        }
+        exploreflag = !exploreflag;
+    }
+    function showSearch() {
+        document.getElementById("yellowBG").classList.remove("none");
+
+        setTimeout(() => {
+            document.getElementById("explore").style.backgroundColor = "#FEBA12";
+            document.getElementById("exploreForm").classList.remove("none");
+            document.getElementById("exploreBtns").classList.add("none");
+            document.getElementById("yellowBG").classList.remove("zindex");
+            requestAnimationFrame(()=>document.getElementById("exploreForm").classList.add("visible"));
+        }, 400);
+    }
+    function reverseShowSearch() {
+        document.getElementById("yellowBG").classList.add("none");
+        document.getElementById("explore").style.backgroundColor = "black";
+        document.getElementById("exploreForm").classList.remove("visible");
+        document.getElementById("yellowBG").classList.add("zindex");
+        document.getElementById("exploreForm").classList.add("none");
+        document.getElementById("exploreBtns").classList.remove("none");
+    }
+
+    //CARROSSEL LOOP
+    var carrossel = document.getElementById("carrossel");
+    var carrosselIndex = 0;
+    var carrosselBalls = [];
+    var seedCarrossel = Math.random();
+    for(var i=0; i<carrossel.childElementCount; i++) {
+        carrosselBalls[i] = document.createElement("div");
+        carrosselBalls[i].classList.add("carrossel-ball");
+        document.getElementById("carrossel-balls").appendChild(carrosselBalls[i]);
+    }
+    carrosselBalls[0].classList.add("blackBG");
+    function loopCarrossel(forward) {
+        carrosselBalls[carrosselIndex].classList.remove("blackBG");
+        if(forward == undefined || (forward != undefined && forward))
+            carrosselIndex = ++carrosselIndex % carrossel.childElementCount;
+        else
+            carrosselIndex = carrosselIndex == 0 ? carrossel.childElementCount - 1 : carrosselIndex - 1;
+        var X = (100/carrossel.childElementCount) * carrosselIndex;
+        carrossel.style.transform = "translateX(-" + X + "%)";
+        carrosselBalls[carrosselIndex].classList.add("blackBG");
+        let seed = seedCarrossel;
+        setTimeout(() => {
+            if(seed == seedCarrossel) {
+                seedCarrossel = Math.random();
+                loopCarrossel();
+            }
+        }, 5000);
+    }
+    setTimeout(() => {
+        loopCarrossel();
+    }, 5000);
+    function manualCarrossel(forward) {
+        seedCarrossel = Math.random();
+        loopCarrossel(forward);
+    }
+
+    //ABOUT MINI MENU
+    function AboutMiniMenu(el) {
+        var a = document.getElementsByClassName("about-ancora");
+        for(var i = 0; i < a.length; i++)
+            a[i].classList.remove("ativo");
+        el.classList.add("ativo");
+    }
+
+    //ABOUT MINI PESSOAS CARD
+    var pessoaCards = document.getElementsByClassName("about-pessoa-card");
+    var pessoaCardIndex = pessoaCards.length - 1;
+    var pessoaonhover = false;
+    function onhoverPessoaCard(id) {
+        pessoaonhover = true;
+        pessoaCards[pessoaCardIndex].classList.add("none");
+        pessoaCards[pessoaCardIndex].style.left = "";
+        pessoaCards[pessoaCardIndex].style.opacity = "";
+        pessoaCards[id].classList.remove("none");
+        requestAnimationFrame(() => {
+            pessoaCards[id].style.left = "0";
+            pessoaCards[id].style.opacity = "1";
+        });
+    }
+    function onhoveroutPessoaCard(id) {
+        pessoaonhover = false;
+        pessoaCards[id].classList.add("none");
+        pessoaCards[id].style.left = "";
+        pessoaCards[id].style.opacity = "";
+        pessoaCards[pessoaCardIndex].classList.remove("none");
+        requestAnimationFrame(() => {
+            pessoaCards[pessoaCardIndex].style.left = "0";
+            pessoaCards[pessoaCardIndex].style.opacity = "1";
+        });
+    }
+    function loopPessoaCard() {
+        if(pessoaonhover)
+            setTimeout(loopPessoaCard, 100);
+        else {
+            pessoaCards[pessoaCardIndex].classList.add("none");
+            pessoaCards[pessoaCardIndex].style.left = "";
+            pessoaCards[pessoaCardIndex].style.opacity = "";
+            pessoaCardIndex++;
+            pessoaCardIndex = pessoaCardIndex % pessoaCards.length;
+            pessoaCards[pessoaCardIndex].classList.remove("none");
+            requestAnimationFrame(() => {
+                pessoaCards[pessoaCardIndex].style.left = "0";
+                pessoaCards[pessoaCardIndex].style.opacity = "1";
+            });
+            //setTimeout(loopPessoaCard, 5000);
+        }
+    }loopPessoaCard();
+</script>
+
+<script>
+
+    var f1_1 = document.getElementById("about");
+    var f1_2 = document.getElementById("navbar");
+    function f1() {
+        var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+        var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0) * 9/16;
+        var marginTop = h;
+        if(w < h)
+            marginTop = w;
+        marginTop -= (f1_2.offsetHeight + 128);
+        f1_1.style.marginTop = marginTop + "px";
+    }
+    var f2_2 = document.getElementById("navbar");
+    var f2_3 = document.getElementById("navbarbg");
+    function f2() {
+        f2_3.style.height = f2_2.offsetHeight + "px";
+        f2_3.style.width = f2_2.offsetWidth + "px";
+        f2_3.style.top = f2_2.offsetTop + "px";
+        f2_3.style.left = f2_2.offsetLeft + "px";
+    }
+    function fs() {
+        f1(); f2();
+        requestAnimationFrame(fs);
+    }fs();
+</script>

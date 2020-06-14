@@ -7,22 +7,6 @@
 </head>
 <body>
     <div class="inner-body">
-        <div class="carrossel">
-            <div id="carrossel" class="carrossel-inner">
-                <img class="carrossel-img" src="../image/IMG_6717.jpg">
-                <img class="carrossel-img" src="../image/IMG_6717.jpg">
-                <img class="carrossel-img" src="../image/IMG_6717.jpg">
-            </div>
-            
-            <div id="carrossel-balls" class="carrossel-balls"></div>
-            <div class="carrossel-next left" onclick="manualCarrossel(false);">
-                <span class="carrossel-arrow arrow-left"></span>
-            </div>
-            <div class="carrossel-next right" onclick="manualCarrossel(true);">
-                <span class="carrossel-arrow arrow-right"></span>
-            </div>
-        </div>
-
         <div class="navbar-margin"></div>
         <div id="navbarbg" class="navbarbg"></div>
 
@@ -37,7 +21,7 @@
                 </div>
             </div>
             <div class="navbar-itens">
-                <a class="navbar-itens-a ativo" href="/home">
+                <a class="navbar-itens-a" href="/home">
                     <span class="navbar-itens-a-normal">Agenda</span>
                     <span class="navbar-itens-a-bold">Agenda</span>
                 </a>
@@ -45,7 +29,7 @@
                     <span class="navbar-itens-a-normal">Produtos</span>
                     <span class="navbar-itens-a-bold">Produtos</span>
                 </a>
-                <a class="navbar-itens-a" href="/contact">
+                <a class="navbar-itens-a ativo" href="/contact">
                     <span class="navbar-itens-a-normal">Contato</span>
                     <span class="navbar-itens-a-bold">Contato</span>
                 </a>
@@ -60,93 +44,17 @@
             </div>
         </div>
 
-        <div id="explore" class="explore none">
-            <div class="explore-bg"></div>
-            <div id="yellowBG" class="explore-bg yellow none zindex"></div>
-
-            <div id="exploreForm" class="explore-hidden explore-form none">
-                <div class="explore-item-wrapper explore-form">
-                    <span style="width: 8%;" class="explore-item-wrapper-span">
-                        <img src="../image/Icones/Icones_3.svg">
-                        <span class="explore-btn clickable"></span>
-                    </span>
-                    <input class="explore-input barra" type="text">
-                </div>
-            </div>
-
-            <div id="exploreBtns" class="explore-hidden">
-                <div class="explore-item-wrapper">
-                    <span style="width: 20%;" class="explore-item-wrapper-span">
-                        <img style="filter:invert();" src="../image/Icones/Icones_3.svg">
-                        <span class="explore-pesquisar">Pesquisar</span>
-                        <span class="explore-btn clickable" onclick="showSearch();"></span>
-                    </span>
-                </div>
-                <div class="explore-item-wrapper">
-                    <div class="explore-texto-wrapper">
-                        <span class="explore-texto-1">Filtre por</span>
-                        <br>
-                        <span class="explore-texto-2">LABORATÓRIOS</span>
-                    </div>
-                </div>
-                <div class="explore-item-wrapper">
-                    <span class="explore-item-wrapper-span">
-                        <img class="" src="../image/Logos/logos_laboratorios_cofa1_w.svg">
-                        <span class="explore-btn clickable"></span>
-                    </span>
-                    <span class="explore-item-wrapper-span">
-                        <img style="width: 175%;" src="../image/Logos/logos_laboratorios_colaboratorio1_w.svg">
-                        <span class="explore-btn clickable"></span>
-                    </span>
-                    <span class="explore-item-wrapper-span">
-                        <img class="" src="../image/Logos/logos_laboratorios_colaboraçao1_w.svg">
-                        <span class="explore-btn clickable"></span>
-                    </span>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="cards-wrapper">
-            <div class="explorer-btn" onclick="explore();">EXPLORE! <span id="explore-arrow" class="arrow"></span></div>
-            <div class="card-box">
-                <img class="card-box-img" src="../image/Capturar1.PNG">
-                <span class="card-box-txt">
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.
-                </span>
-                <span class="card-box-txt black">
-                    Por Felipe Takei
-                </span>
-            </div>
-            <div class="card-box">
-                <img class="card-box-img" src="../image/Capturar2.PNG">
-                <span class="card-box-txt">
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.
-                </span>
-                <span class="card-box-txt black">
-                    Por Paulo Domingos
-                </span>
-            </div>
-            <div class="card-box">
-                <img class="card-box-img" src="../image/Capturar3.PNG">
-                <span class="card-box-txt">
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.
-                </span>
-                <span class="card-box-txt black">
-                    Por Eduardo Azevedo
-                </span>
-            </div>
-            <div class="card-box">
-                <img class="card-box-img" src="../image/Capturar4.PNG">
-                <span class="card-box-txt">
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.
-                </span>
-                <span class="card-box-txt black">
-                    Por Vitória dos Reis
-                </span>
-            </div>
+        <div class="contato-box">
+            <h2 class="contato-title">CONTATO</h2>
+            <span class="contato-text">Envie uma mensagem:</span>
+            <br><br>
+            <input class="contato-input barra" placeholder="Email" type="text">
+            <br><br>
+            <input class="contato-input barra" placeholder="Mensagem" type="text">
+            <br><br>
+            <a class="contato-itens-a ativo" style="float: right;" href="#">
+                <span class="contato-itens-a-bold">OK</span>
+            </a>
         </div>
 
         <div class="footer">
@@ -296,9 +204,8 @@
 
 <script>
 
-    var f1_1 = document.getElementById("explore");
+    var f1_1 = document.getElementById("about");
     var f1_2 = document.getElementById("navbar");
-    var f1_3 = document.getElementById("navbarbg");
     function f1() {
         var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
         var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0) * 9/16;
@@ -316,17 +223,9 @@
         f2_3.style.top = f2_2.offsetTop + "px";
         f2_3.style.left = f2_2.offsetLeft + "px";
     }
-    function f3() {
-        var cardTxts = document.getElementsByClassName("card-box-txt");
-        for(var i = 0; i < cardTxts.length; i+=2)
-            cardTxts[i].style.height = cardTxts[i].offsetWidth * 0.5 + "px";
-    }
-    var fs_aux = 0;
     function fs() {
-        f1();
+        //f1();
         f2();
-        f3();
-        fs_aux = document.documentElement.clientWidth;
         requestAnimationFrame(fs);
     }fs();
 </script>

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Co-Labor</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="resources/css/layout.css"></link>
+</head>
+<body>
+    <div class="inner-body">
+        <div class="navbar-margin"></div>
+        <div id="navbarbg" class="navbarbg"></div>
+
+        <div id="navbar" class="navbar">
+            <div class="navbar-title">
+                <div class="navbar-title-logo-wrapper">
+                    <img class="navbar-title-logo" src="resources/image/Logos/Marca_Co_Labor_transparente2.svg">
+                </div>
+                <span class="navbar-title-titulo">ARTE, DESIGN, CO-CRIAÇÃO & ATIVISMO</span>
+                <div class="navbar-title-logo-wrapper">
+                    <img class="navbar-title-logo" src="resources/image/Icones/Icones_1.svg">
+                </div>
+            </div>
+            <div class="navbar-itens">
+                <a class="navbar-itens-a" href="/home.html">
+                    <span class="navbar-itens-a-normal">Agenda</span>
+                    <span class="navbar-itens-a-bold">Agenda</span>
+                </a>
+                <a class="navbar-itens-a" href="#">
+                    <span class="navbar-itens-a-normal">Produtos</span>
+                    <span class="navbar-itens-a-bold">Produtos</span>
+                </a>
+                <a class="navbar-itens-a ativo" href="/contact.html">
+                    <span class="navbar-itens-a-normal">Contato</span>
+                    <span class="navbar-itens-a-bold">Contato</span>
+                </a>
+                <a class="navbar-itens-a" href="/about.html">
+                    <span class="navbar-itens-a-normal">Sobre</span>
+                    <span class="navbar-itens-a-bold">Sobre</span>
+                </a>
+                <a class="navbar-itens-a" href="#">
+                    <span class="navbar-itens-a-normal">Cadastro/Login</span>
+                    <span class="navbar-itens-a-bold">Cadastro/Login</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="contato-box">
+            <h2 class="contato-title">CONTATO</h2>
+            <span class="contato-text">Envie uma mensagem:</span>
+            <br><br>
+            <input class="contato-input barra" placeholder="Email" type="text">
+            <br><br>
+            <input class="contato-input barra" placeholder="Mensagem" type="text">
+            <br><br>
+            <a class="contato-itens-a ativo" style="float: right;" href="#">
+                <span class="contato-itens-a-bold">OK</span>
+            </a>
+        </div>
+
+        <div class="footer">
+            <div class="footer-img-wrapper">
+                <img class="footer-img" src="resources/image/Logos/Marca_Co_Labor_transparente1.svg">
+            </div>
+            <div class="footer-box left">
+                <a class="footer-itens-a ativo" href="#">
+                    <span class="footer-itens-a-normal">Loja</span>
+                    <span class="footer-itens-a-bold">Loja</span>
+                </a>
+                <br><br>
+                <a class="footer-itens-a" href="#">
+                    <span class="footer-itens-a-normal">Conteúdo</span>
+                    <span class="footer-itens-a-bold">Conteúdo</span>
+                </a>
+                <br><br>
+                <a class="footer-itens-a" href="#">
+                    <span class="footer-itens-a-normal">Agenda</span>
+                    <span class="footer-itens-a-bold">Agenda</span>
+                </a>
+            </div>
+            <div class="footer-box left">
+                <a class="footer-itens-a ativo" href="#">
+                    <span class="footer-itens-a-normal">Sobre</span>
+                    <span class="footer-itens-a-bold">Sobre</span>
+                </a>
+                <br><br>
+                <a class="footer-itens-a" href="#">
+                    <span class="footer-itens-a-normal">Contato</span>
+                    <span class="footer-itens-a-bold">Contato</span>
+                </a>
+            </div>
+            <div class="footer-box right">
+                <span class="footer-text">Faça seu Cadastro:</span>
+                <br><br>
+                <input class="footer-input barra" placeholder="Email" type="text">
+                <br><br>
+                <input class="footer-input barra" placeholder="Senha" type="password">
+                <br><br>
+                <a class="footer-itens-a ativo" style="float: right;" href="#">
+                    <span class="footer-itens-a-normal">OK</span>
+                    <span class="footer-itens-a-bold b2">OK</span>
+                </a>
+            </div>
+            <div class="footer-break"></div>
+            
+            <div class="footer-rede-social">
+                <a class="footer-itens-a" href="#">
+                    <span class="footer-itens-a-normal">Instagram</span>
+                    <span class="footer-itens-a-bold b2">Instagram</span>
+                </a> |
+                <a class="footer-itens-a" href="#">
+                    <span class="footer-itens-a-normal">Twitter</span>
+                    <span class="footer-itens-a-bold b2">Twitter</span>
+                </a> |
+                <a class="footer-itens-a" href="#">
+                    <span class="footer-itens-a-normal">Youtube</span>
+                    <span class="footer-itens-a-bold b2">Youtube</span>
+                </a> |
+                <a class="footer-itens-a" href="#">
+                    <span class="footer-itens-a-normal">Behance</span>
+                    <span class="footer-itens-a-bold b2">Behance</span>
+                </a> |
+                <a class="footer-itens-a" href="#">
+                    <span class="footer-itens-a-normal">Facebook</span>
+                    <span class="footer-itens-a-bold b2">Facebook</span>
+                </a>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
+<script type="text/javascript" src="resources/javascript/javascript.js"></script>
+<script>
+    //EXPLORE BUTTON
+    var exploreflag = false;
+    function explore() {
+        if(!exploreflag) {
+            document.getElementById("explore").classList.remove("none");
+            document.getElementById("explore-arrow").classList.add("rotate");
+            reverseShowSearch();
+        }
+        else {
+            document.getElementById("explore").classList.add("none");
+            document.getElementById("explore-arrow").classList.remove("rotate");
+        }
+        exploreflag = !exploreflag;
+    }
+    function showSearch() {
+        document.getElementById("yellowBG").classList.remove("none");
+
+        setTimeout(() => {
+            document.getElementById("explore").style.backgroundColor = "#FEBA12";
+            document.getElementById("exploreForm").classList.remove("none");
+            document.getElementById("exploreBtns").classList.add("none");
+            document.getElementById("yellowBG").classList.remove("zindex");
+            requestAnimationFrame(()=>document.getElementById("exploreForm").classList.add("visible"));
+        }, 400);
+    }
+    function reverseShowSearch() {
+        document.getElementById("yellowBG").classList.add("none");
+        document.getElementById("explore").style.backgroundColor = "black";
+        document.getElementById("exploreForm").classList.remove("visible");
+        document.getElementById("yellowBG").classList.add("zindex");
+        document.getElementById("exploreForm").classList.add("none");
+        document.getElementById("exploreBtns").classList.remove("none");
+    }
+
+    //CARROSSEL LOOP
+    var carrossel = document.getElementById("carrossel");
+    var carrosselIndex = 0;
+    var carrosselBalls = [];
+    var seedCarrossel = Math.random();
+    for(var i=0; i<carrossel.childElementCount; i++) {
+        carrosselBalls[i] = document.createElement("div");
+        carrosselBalls[i].classList.add("carrossel-ball");
+        document.getElementById("carrossel-balls").appendChild(carrosselBalls[i]);
+    }
+    carrosselBalls[0].classList.add("blackBG");
+    function loopCarrossel(forward) {
+        carrosselBalls[carrosselIndex].classList.remove("blackBG");
+        if(forward == undefined || (forward != undefined && forward))
+            carrosselIndex = ++carrosselIndex % carrossel.childElementCount;
+        else
+            carrosselIndex = carrosselIndex == 0 ? carrossel.childElementCount - 1 : carrosselIndex - 1;
+        var X = (100/carrossel.childElementCount) * carrosselIndex;
+        carrossel.style.transform = "translateX(-" + X + "%)";
+        carrosselBalls[carrosselIndex].classList.add("blackBG");
+        let seed = seedCarrossel;
+        setTimeout(() => {
+            if(seed == seedCarrossel) {
+                seedCarrossel = Math.random();
+                loopCarrossel();
+            }
+        }, 5000);
+    }
+    setTimeout(() => {
+        loopCarrossel();
+    }, 5000);
+    function manualCarrossel(forward) {
+        seedCarrossel = Math.random();
+        loopCarrossel(forward);
+    }
+</script>
+
+<script>
+
+    var f1_1 = document.getElementById("about");
+    var f1_2 = document.getElementById("navbar");
+    function f1() {
+        var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+        var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0) * 9/16;
+        var marginTop = h;
+        if(w < h)
+            marginTop = w;
+        marginTop -= (f1_2.offsetHeight + 128);
+        f1_1.style.marginTop = marginTop + "px";
+    }
+    var f2_2 = document.getElementById("navbar");
+    var f2_3 = document.getElementById("navbarbg");
+    function f2() {
+        f2_3.style.height = f2_2.offsetHeight + "px";
+        f2_3.style.width = f2_2.offsetWidth + "px";
+        f2_3.style.top = f2_2.offsetTop + "px";
+        f2_3.style.left = f2_2.offsetLeft + "px";
+    }
+    function fs() {
+        //f1();
+        f2();
+        requestAnimationFrame(fs);
+    }fs();
+</script>
