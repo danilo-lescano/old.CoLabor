@@ -94,20 +94,18 @@ body {
     opacity: .3;
 }
 .carrossel-arrow {
-    position: absolute;
-    top: 50%;
-    left: 50%;
+    position: relative;
     display: inline-block;
-    border-bottom: 5px solid black;
-    border-right: 5px solid black;
-    width: 100px;
-    height: 100px;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    width: 10px;
+    height: 10px;
 }
 .arrow-right {
-    transform: translate(-75%, -50%) rotate(-45deg);
+    transform: translate(0, -50%) rotate(-45deg);
 }
 .arrow-left {
-    transform: translate(-25%, -50%) rotate(135deg);
+    transform: translate(0, -50%) rotate(135deg);
 }
 .carrossel-balls {
     position: absolute;
@@ -155,7 +153,7 @@ body {
     height: 128px;
 }
 .navbar {
-    position: sticky;
+    position: relative;
     width: 100%;
     top: 0;
     z-index: 5;
@@ -166,10 +164,24 @@ body {
 }
 .navbar-title-logo-wrapper {
     display: inline-block;
-    width: 150px;
-    height: 100px;
+    width: 15%;
+    max-width: 180px;
+    padding-bottom: min(15%, 180px);
     position: relative;
-    transform: translate(0, -25%);
+}
+.navbar-title-img-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-bottom: min(15%, 180px);
+    width: calc(70% - 8px);
+    max-width: 800px;
+}
+.navbar-title-img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
 }
 .navbar-title-logo {
     position: absolute;
@@ -288,7 +300,8 @@ body {
 .explore-item-wrapper-span {
     display: inline-block;
     position: relative;
-    width: 32%;
+    width: calc(33% - 4px);
+    max-width: 125px;
     vertical-align: top;
     height: inherit;
 }
@@ -321,7 +334,7 @@ body {
 .explore-texto-2 {
     color: white;
     font-family: myFuturaBold;
-    font-size: 2em;
+    font-size: em;
 }
 .explore-texto-wrapper {
     position: relative;
@@ -388,18 +401,18 @@ body {
     position: absolute;
     color: black;
     font-size: 2em;
-    font-family: mySerifBold;
+    font-family: myFuturaBold;
 }
 .explorer-btn:hover {
     cursor: pointer;
 }
 .arrow {
     display: inline-block;
-    border-bottom: 5px solid black;
-    border-right: 5px solid black;
-    width: 20px;
-    height: 20px;
-    transform: rotate(45deg);
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    width: 8px;
+    height: 8px;
+    transform: rotate(45deg) translate(-50%, -50%);
     transition: transform 200ms;
 }
 .arrow.rotate {
@@ -423,7 +436,7 @@ body {
     display: inline-block;
     font-size: .8em;
     font-family: mySerif;
-    padding-top: 35px;
+    margin-top: 15px;
     padding-right: 15px;
     overflow: auto;
 }
@@ -485,11 +498,14 @@ body {
 }
 .footer-itens-a {
     position: relative;
-    margin: 0 10px;
+    margin-right: 10px;
     color: black;
     font-size: 1em;
     font-family: mySerif;
     font-weight: 1000;
+}
+.footer-itens-a:last-child {
+    margin-right: 0;
 }
 .footer-itens-a-bold {
     visibility: hidden;
@@ -554,15 +570,18 @@ body {
     width: 50%;
     padding-top: 40px;
     margin: 0 25%;
+    font-family: mySerif;
 }
 .about-wrapper-2 {
     text-align: justify;
     width: 80%;
     margin: 40px 10%;
+    font-family: mySerif;
 }
 .about-wrapper-3 {
     text-align: center;
     width: 100%;
+    font-family: mySerif;
 }
 .about-card {
     position: relative;
@@ -621,6 +640,7 @@ body {
 }
 .about-p {
     font-size: 1.1em;
+    margin-bottom: 50px;
 }
 .about-p-card {
     margin-top: 0;
@@ -628,6 +648,8 @@ body {
 }
 .about-mini-menu {
     color: #FBF6EF;
+    text-align: justify;
+    text-align-last: left;
     -webkit-text-stroke: 1px black;
 }
 a.ativo.about-ancora {
@@ -643,7 +665,24 @@ a.ativo.about-ancora {
     color: black !important;
     -webkit-text-stroke: 0px black !important;
 }
-.about-pessoa:hover {
+.about-pessoa {
+    position: relative;
+    display: inline-block;
+}
+.about-pessoa>.normal {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+}
+.about-pessoa:hover>.normal {
+    visibility: hidden;
+}
+.about-pessoa:hover>.black {
+    visibility: visible;
+}
+.about-pessoa>.black {
+    visibility: hidden;
     font-family: myFuturaBold;
 }
 .about-pessoa-card-wrapper {
@@ -656,14 +695,18 @@ a.ativo.about-ancora {
     display: inline-block;
     left: 100%;
     opacity: 0;
-    transition: left ease-in .4s, opacity ease-in .4s;
+    transition: opacity ease-in .4s;
 }
 .about-pessoa-card.none {
     display: none;
 }
 .about-pessoa-card-img {
     width: 100px;
+    height: 100px;
     float: left;
+    position: relative;
+    overflow: hidden;
+    margin-right: 20px;
 }
 .about-pessoa-card-text {
     width: 175px;
@@ -679,6 +722,23 @@ a.ativo.about-ancora {
     font-size: 0.6em;
     width: 300px;
 }
+.about-equipe-wrapper {
+    display: inline-block;
+}
+a>span.serifthis {
+    font-family: mySerif !important;
+}
+a>span.serifthis.b2 {
+    font-family: mySerifBold !important;
+}
+.about-pessoa-card-text>.footer-rede-social {
+    margin-top: 10px;
+}
+
+
+
+
+
 
 
 
@@ -703,7 +763,7 @@ a.ativo.about-ancora {
 .contato-text {
     position: relative;
     color: black;
-    font-size: 1em;
+    font-size: 1.3em;
     font-family: mySerifBold;
     font-weight: 1000;
 }

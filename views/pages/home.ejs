@@ -13,14 +13,8 @@
                 <img class="carrossel-img" src="../image/IMG_6717.jpg">
                 <img class="carrossel-img" src="../image/IMG_6717.jpg">
             </div>
-            
+
             <div id="carrossel-balls" class="carrossel-balls"></div>
-            <div class="carrossel-next left" onclick="manualCarrossel(false);">
-                <span class="carrossel-arrow arrow-left"></span>
-            </div>
-            <div class="carrossel-next right" onclick="manualCarrossel(true);">
-                <span class="carrossel-arrow arrow-right"></span>
-            </div>
         </div>
 
         <div class="navbar-margin"></div>
@@ -28,16 +22,20 @@
 
         <div id="navbar" class="navbar">
             <div class="navbar-title">
-                <div class="navbar-title-logo-wrapper">
-                    <img class="navbar-title-logo" src="../image/Logos/Marca_Co_Labor_transparente2.svg">
+                <a href="/home" style="text-decoration: none;">
+                    <div class="navbar-title-logo-wrapper clickable">
+                        <img class="navbar-title-logo" src="../image/Logos/Marca_Co_Labor_transparente2.svg">
+                    </div>
+                </a>
+                <div class="navbar-title-img-wrapper">
+                    <img class="navbar-title-img" src="../image/Logos/title.svg">
                 </div>
-                <span class="navbar-title-titulo">ARTE, DESIGN, CO-CRIAÇÃO & ATIVISMO</span>
                 <div class="navbar-title-logo-wrapper">
                     <img class="navbar-title-logo" src="../image/Icones/Icones_1.svg">
                 </div>
             </div>
             <div class="navbar-itens">
-                <a class="navbar-itens-a ativo" href="/home">
+                <a class="navbar-itens-a" href="#">
                     <span class="navbar-itens-a-normal">Agenda</span>
                     <span class="navbar-itens-a-bold">Agenda</span>
                 </a>
@@ -188,29 +186,29 @@
                 <input class="footer-input barra" placeholder="Senha" type="password">
                 <br><br>
                 <a class="footer-itens-a ativo" style="float: right;" href="#">
-                    <span class="footer-itens-a-normal">OK</span>
-                    <span class="footer-itens-a-bold b2">OK</span>
+                    <span class="footer-itens-a-normal" style="font-family: myFutura; font-size: 1.2em;">OK</span>
+                    <span class="footer-itens-a-bold b2" style="font-family: myFutura; font-size: 1.2em;">OK</span>
                 </a>
             </div>
             <div class="footer-break"></div>
-            
+
             <div class="footer-rede-social">
                 <a class="footer-itens-a" href="#">
                     <span class="footer-itens-a-normal">Instagram</span>
                     <span class="footer-itens-a-bold b2">Instagram</span>
-                </a> |
+                </a> <span class="footer-itens-a">|</span>
                 <a class="footer-itens-a" href="#">
                     <span class="footer-itens-a-normal">Twitter</span>
                     <span class="footer-itens-a-bold b2">Twitter</span>
-                </a> |
+                </a> <span class="footer-itens-a">|</span>
                 <a class="footer-itens-a" href="#">
                     <span class="footer-itens-a-normal">Youtube</span>
                     <span class="footer-itens-a-bold b2">Youtube</span>
-                </a> |
+                </a> <span class="footer-itens-a">|</span>
                 <a class="footer-itens-a" href="#">
                     <span class="footer-itens-a-normal">Behance</span>
                     <span class="footer-itens-a-bold b2">Behance</span>
-                </a> |
+                </a> <span class="footer-itens-a">|</span>
                 <a class="footer-itens-a" href="#">
                     <span class="footer-itens-a-normal">Facebook</span>
                     <span class="footer-itens-a-bold b2">Facebook</span>
@@ -262,12 +260,28 @@
     var carrosselIndex = 0;
     var carrosselBalls = [];
     var seedCarrossel = Math.random();
-    for(var i=0; i<carrossel.childElementCount; i++) {
-        carrosselBalls[i] = document.createElement("div");
-        carrosselBalls[i].classList.add("carrossel-ball");
-        document.getElementById("carrossel-balls").appendChild(carrosselBalls[i]);
+    if(carrossel.childElementCount > 0) {
+        var leftArrow, rightArrow;
+        leftArrow = document.createElement("div");
+        leftArrow.classList.add("carrossel-arrow");
+        leftArrow.classList.add("arrow-left");
+        leftArrow.classList.add("clickable");
+        leftArrow.onclick = function () { manualCarrossel(false); };
+        document.getElementById("carrossel-balls").appendChild(leftArrow);
+        for(var i=0; i<carrossel.childElementCount; i++) {
+            carrosselBalls[i] = document.createElement("div");
+            carrosselBalls[i].classList.add("carrossel-ball");
+            document.getElementById("carrossel-balls").appendChild(carrosselBalls[i]);
+        }
+        rightArrow = document.createElement("div");
+        rightArrow.classList.add("carrossel-arrow");
+        rightArrow.classList.add("arrow-right");
+        rightArrow.classList.add("clickable");
+        rightArrow.onclick = function () { manualCarrossel(true); };
+        document.getElementById("carrossel-balls").appendChild(rightArrow);
+
+        carrosselBalls[0].classList.add("blackBG");
     }
-    carrosselBalls[0].classList.add("blackBG");
     function loopCarrossel(forward) {
         carrosselBalls[carrosselIndex].classList.remove("blackBG");
         if(forward == undefined || (forward != undefined && forward))
@@ -298,7 +312,6 @@
 
     var f1_1 = document.getElementById("explore");
     var f1_2 = document.getElementById("navbar");
-    var f1_3 = document.getElementById("navbarbg");
     function f1() {
         var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
         var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0) * 9/16;
@@ -308,15 +321,7 @@
         marginTop -= (f1_2.offsetHeight + 128);
         f1_1.style.marginTop = marginTop + "px";
     }
-    var f2_2 = document.getElementById("navbar");
-    var f2_3 = document.getElementById("navbarbg");
     function f2() {
-        f2_3.style.height = f2_2.offsetHeight + "px";
-        f2_3.style.width = f2_2.offsetWidth + "px";
-        f2_3.style.top = f2_2.offsetTop + "px";
-        f2_3.style.left = f2_2.offsetLeft + "px";
-    }
-    function f3() {
         var cardTxts = document.getElementsByClassName("card-box-txt");
         for(var i = 0; i < cardTxts.length; i+=2)
             cardTxts[i].style.height = cardTxts[i].offsetWidth * 0.5 + "px";
@@ -325,7 +330,6 @@
     function fs() {
         f1();
         f2();
-        f3();
         fs_aux = document.documentElement.clientWidth;
         requestAnimationFrame(fs);
     }fs();

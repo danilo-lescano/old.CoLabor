@@ -12,16 +12,18 @@
 
         <div id="navbar" class="navbar">
             <div class="navbar-title">
-                <div class="navbar-title-logo-wrapper">
-                    <img class="navbar-title-logo" src="../image/Logos/Marca_Co_Labor_transparente2.svg">
-                </div>
+                <a href="/home">
+                    <div class="navbar-title-logo-wrapper">
+                        <img class="navbar-title-logo" src="../image/Logos/Marca_Co_Labor_transparente2.svg">
+                    </div>
+                </a>
                 <span class="navbar-title-titulo">ARTE, DESIGN, CO-CRIAÇÃO & ATIVISMO</span>
                 <div class="navbar-title-logo-wrapper">
                     <img class="navbar-title-logo" src="../image/Icones/Icones_1.svg">
                 </div>
             </div>
             <div class="navbar-itens">
-                <a class="navbar-itens-a" href="/home">
+                <a class="navbar-itens-a" href="#">
                     <span class="navbar-itens-a-normal">Agenda</span>
                     <span class="navbar-itens-a-bold">Agenda</span>
                 </a>
@@ -53,7 +55,7 @@
             <input class="contato-input barra" placeholder="Mensagem" type="text">
             <br><br>
             <a class="contato-itens-a ativo" style="float: right;" href="#">
-                <span class="contato-itens-a-bold">OK</span>
+                <span class="contato-itens-a-bold" style="font-family: myFutura; font-size: 1.2em;">OK</span>
             </a>
         </div>
 
@@ -96,8 +98,8 @@
                 <input class="footer-input barra" placeholder="Senha" type="password">
                 <br><br>
                 <a class="footer-itens-a ativo" style="float: right;" href="#">
-                    <span class="footer-itens-a-normal">OK</span>
-                    <span class="footer-itens-a-bold b2">OK</span>
+                    <span class="footer-itens-a-normal" style="font-family: myFutura; font-size: 1.2em;">OK</span>
+                    <span class="footer-itens-a-bold b2" style="font-family: myFutura; font-size: 1.2em;">OK</span>
                 </a>
             </div>
             <div class="footer-break"></div>
@@ -106,19 +108,19 @@
                 <a class="footer-itens-a" href="#">
                     <span class="footer-itens-a-normal">Instagram</span>
                     <span class="footer-itens-a-bold b2">Instagram</span>
-                </a> |
+                </a> <span class="footer-itens-a">|</span>
                 <a class="footer-itens-a" href="#">
                     <span class="footer-itens-a-normal">Twitter</span>
                     <span class="footer-itens-a-bold b2">Twitter</span>
-                </a> |
+                </a> <span class="footer-itens-a">|</span>
                 <a class="footer-itens-a" href="#">
                     <span class="footer-itens-a-normal">Youtube</span>
                     <span class="footer-itens-a-bold b2">Youtube</span>
-                </a> |
+                </a> <span class="footer-itens-a">|</span>
                 <a class="footer-itens-a" href="#">
                     <span class="footer-itens-a-normal">Behance</span>
                     <span class="footer-itens-a-bold b2">Behance</span>
-                </a> |
+                </a> <span class="footer-itens-a">|</span>
                 <a class="footer-itens-a" href="#">
                     <span class="footer-itens-a-normal">Facebook</span>
                     <span class="footer-itens-a-bold b2">Facebook</span>
@@ -200,32 +202,4 @@
         seedCarrossel = Math.random();
         loopCarrossel(forward);
     }
-</script>
-
-<script>
-
-    var f1_1 = document.getElementById("about");
-    var f1_2 = document.getElementById("navbar");
-    function f1() {
-        var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
-        var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0) * 9/16;
-        var marginTop = h;
-        if(w < h)
-            marginTop = w;
-        marginTop -= (f1_2.offsetHeight + 128);
-        f1_1.style.marginTop = marginTop + "px";
-    }
-    var f2_2 = document.getElementById("navbar");
-    var f2_3 = document.getElementById("navbarbg");
-    function f2() {
-        f2_3.style.height = f2_2.offsetHeight + "px";
-        f2_3.style.width = f2_2.offsetWidth + "px";
-        f2_3.style.top = f2_2.offsetTop + "px";
-        f2_3.style.left = f2_2.offsetLeft + "px";
-    }
-    function fs() {
-        //f1();
-        f2();
-        requestAnimationFrame(fs);
-    }fs();
 </script>
