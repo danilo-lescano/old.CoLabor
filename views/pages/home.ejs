@@ -3,6 +3,7 @@
 <head>
     <title>Co-Labor</title>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../css/layout.css"></link>
 </head>
 <body>
@@ -22,16 +23,9 @@
 
         <div id="navbar" class="navbar">
             <div class="navbar-title">
-                <a href="/home" style="text-decoration: none;">
-                    <div class="navbar-title-logo-wrapper clickable">
-                        <img class="navbar-title-logo" src="../image/Logos/Marca_Co_Labor_transparente2.svg">
-                    </div>
-                </a>
                 <div class="navbar-title-img-wrapper">
-                    <img class="navbar-title-img" src="../image/Logos/title.svg">
-                </div>
-                <div class="navbar-title-logo-wrapper">
-                    <img class="navbar-title-logo" src="../image/Icones/Icones_1.svg">
+                    <img class="navbar-title-img" src="../image/header-02-svg.svg">
+                    <a href="/home" class="home-inv-btn"></a>
                 </div>
             </div>
             <div class="navbar-itens">
@@ -90,23 +84,34 @@
                 <div class="explore-item-wrapper">
                     <span class="explore-item-wrapper-span">
                         <img class="" src="../image/Logos/logos_laboratorios_cofa1_w.svg">
-                        <span class="explore-btn clickable"></span>
+                        <span class="explore-btn clickable" onclick="cardsType(1)"></span>
                     </span>
                     <span class="explore-item-wrapper-span">
                         <img style="width: 175%;" src="../image/Logos/logos_laboratorios_colaboratorio1_w.svg">
-                        <span class="explore-btn clickable"></span>
+                        <span class="explore-btn clickable" onclick="cardsType(2)"></span>
                     </span>
                     <span class="explore-item-wrapper-span">
                         <img class="" src="../image/Logos/logos_laboratorios_colaboraçao1_w.svg">
-                        <span class="explore-btn clickable"></span>
+                        <span class="explore-btn clickable" onclick="cardsType(3)"></span>
                     </span>
                 </div>
             </div>
         </div>
 
 
-        <div class="cards-wrapper">
+        <div id="cards-wrapper" class="cards-wrapper">
             <div class="explorer-btn" onclick="explore();">EXPLORE! <span id="explore-arrow" class="arrow"></span></div>
+
+
+            <div class="card-box">
+                <img class="card-box-img" src="../image/Mou-Aysha-portrait-photography-3.jpg">
+                <span class="card-box-txt">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.
+                </span>
+                <span class="card-box-txt black">
+                    Por Felipe Takei
+                </span>
+            </div>
             <div class="card-box">
                 <img class="card-box-img" src="../image/Capturar1.PNG">
                 <span class="card-box-txt">
@@ -147,7 +152,7 @@
             </div>
         </div>
 
-        <div class="footer">
+        <div id="footer" class="footer">
             <div class="footer-img-wrapper">
                 <img class="footer-img" src="../image/Logos/Marca_Co_Labor_transparente1.svg">
             </div>
@@ -306,6 +311,30 @@
         seedCarrossel = Math.random();
         loopCarrossel(forward);
     }
+
+    function cardsType(type) {
+        //type = 0 - reset colo | 1 - co-fab | 2 - co-labo-ratorio | 3 - co-labor-ação
+        if(type == 0) {
+            document.body.style.backgroundColor = "#FBF6EF";
+            document.getElementById("cards-wrapper").classList.remove("white");
+            document.getElementById("footer").classList.remove("white");
+        }
+        else if(type == 1) {
+            document.body.style.backgroundColor = "#BAD7CE";
+            document.getElementById("cards-wrapper").classList.remove("white");
+            document.getElementById("footer").classList.remove("white");
+        }
+        else if(type == 2) {
+            document.body.style.backgroundColor = "#FEBA12";
+            document.getElementById("cards-wrapper").classList.remove("white");
+            document.getElementById("footer").classList.remove("white");
+        }
+        else if(type == 3) {
+            document.body.style.backgroundColor = "#EF3C3B";
+            document.getElementById("cards-wrapper").classList.add("white");
+            document.getElementById("footer").classList.add("white");
+        }
+    }
 </script>
 
 <script>
@@ -333,4 +362,7 @@
         fs_aux = document.documentElement.clientWidth;
         requestAnimationFrame(fs);
     }fs();
+    console.log(
+        "<%= teste1 %>"
+    );
 </script>
