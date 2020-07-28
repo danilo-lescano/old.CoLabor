@@ -9,7 +9,8 @@
 </head>
 <body>
     <div class="inner-body">
-        <div class="carrossel">
+        <span id="mb-container-0"></span>
+        <div id="carrossel-wrapper" class="carrossel js-w100">
             <div id="carrossel" class="carrossel-inner">
                 <span class="carrossel-img-wrapper">
                     <img class="carrossel-img" src="../image/1_Manifesto_CARROSSEL_CARROSSEL_DESKTOP.jpg">
@@ -137,8 +138,7 @@
             </svg>
         </div>
 
-        <div id="explore" class="explore none">
-            <div class="explore-bg"></div>
+        <div id="explore" class="explore js-w100 none">
             <div id="yellowBG" class="explore-bg yellow none zindex"></div>
 
             <div id="exploreForm" class="explore-hidden explore-form none">
@@ -189,8 +189,8 @@
             <span id="mb-title-3" style="color: #35502D;">CO-CRIAÇÃO,</span><br>
             <span id="mb-title-4" style="color: #276271;">& ATIVISMO.</span><br>
             <br>
-            <span id="mb-title-5" class="aboutBold about-mini-menu">EXPLORE!</span><br>
-            <div id="mb-seta" class="mb-seta"></div>
+            <span id="mb-title-5" class="aboutBold about-mini-menu" onclick="mbExploreClick()">EXPLORE!</span><br>
+            <div id="mb-seta" class="mb-seta" onclick="mbExploreClick()"></div>
         </div>
 
         <div id="mbMenu" class="mb-menu">
@@ -210,8 +210,8 @@
             </div>
         </div>
 
-        <span class="mb-container dois">
-            <div id="cards-wrapper" class="cards-wrapper">
+        <span id="mb-container-1" class="mb-container dois">
+            <div id="cards-wrapper" class="cards-wrapper js-mte">
                 <div class="explorer-btn" onclick="explore();">EXPLORE! <span id="explore-arrow" class="arrow"></span></div>
 
 
@@ -234,26 +234,18 @@
                 </a>
 
                 <a href="/blog/1" class="card-box">
-                    <img class="card-box-img" src="../image/3_O Homem Invisível_FelipeTakei_THUMB_Prancheta 1.jpg">
+                    <img class="card-box-img" src="../image/direito ao uso thumbnail.gif">
                     <span class="card-box-txt">
                         Na incerteza de como iniciar este texto da forma mais atenciosa às motivações que me levam a escrevê-lo tomei a decisão de pesquisar quantas vezes dá pra se ouvir a música “Do Leme ao Pontal” do Tim Maia numa viagem do Leme carioca até o Pontal, e segundo a conta do twitter “quantas vezes da pra ouvir a música”, aparentemente 15 vezes. Sim, é assim mesmo que eu vou começar isso.
                     </span>
                     <span class="card-box-txt black">
-                        Por Felipe Takei
-                    </span>
-                </a>
-                <a href="/blog/2" class="card-box">
-                    <img class="card-box-img" src="../image/thumnail_feeddosite-03.jpg">
-                    <span class="card-box-txt">
-                        Surgimos em tempos obscuros. Em que uma das ordens é “Não fale em crise, trabalhe!”. Em que o Labor é chamado de trabalho, tarefa árdua, demorada, que tomou conta de nossas vidas. Nosso trabalho há muito tempo não é nosso. Apesar de nos venderem a  um  tempo  a  ideia  de  que  “somos  empresários  de  nós  mesmos”,  continuamos  a  trabalhar  para  os  outros.  O  Labor  mítico,  da  pessoa que provê sua subsistência, não é o trabalho que nos apresentaram. Esse trabalho é outra coisa, tem a ver com o tal do mais-valor.
-                    </span>
-                    <span class="card-box-txt black">
+                        Por Paulo Domingos
                     </span>
                 </a>
             </div>
         </span>
 
-        <span class="mb-container tres">
+        <span id="mb-container-2" class="mb-container tres">
             <div id="footer" class="footer">
                 <div class="footer-img-wrapper">
                     <img class="footer-img" src="../image/Logos/Marca_Co_Labor_transparente1.svg">
@@ -275,12 +267,12 @@
                     </a>
                 </div>
                 <div class="footer-box left">
-                    <a class="footer-itens-a" href="#">
+                    <a class="footer-itens-a" href="/sobre">
                         <span class="footer-itens-a-normal">Sobre</span>
                         <span class="footer-itens-a-bold">Sobre</span>
                     </a>
                     <br><br>
-                    <a class="footer-itens-a" href="#">
+                    <a class="footer-itens-a" href="/contato">
                         <span class="footer-itens-a-normal">Contato</span>
                         <span class="footer-itens-a-bold">Contato</span>
                     </a>
@@ -323,7 +315,39 @@
                 </div>
             </div>
 
-            <div class="mb-footer"></div>
+            <div class="mb-footer">
+                <div class="mb-cadastro">
+                    <span class="footer-text">Faça seu Cadastro:</span>
+                    <br><br>
+                    <input class="footer-input barra" placeholder="Email" type="text">
+                    <br><br>
+                    <input class="footer-input barra" placeholder="Senha" type="password">
+                    <br><br>
+                    <a class="footer-itens-a ativo" style="float: right;" href="#">
+                        <span class="footer-itens-a-normal" style="font-family: myFutura; font-size: 1.2em;">OK</span>
+                        <span class="footer-itens-a-bold b2" style="font-family: myFutura; font-size: 1.2em;">OK</span>
+                    </a>
+                </div>
+                <div class="mb-contato">
+                    Entre em contato<br>
+                    <span style="font-weight: bold;">coletivolabor@gmail.com</span><br><br>
+                     <a class="footer-itens-a" target="_blank" href="https://www.instagram.com/coletivolabor/">
+                        <span class="footer-itens-a-normal">Instagram</span>
+                        <span class="footer-itens-a-bold b2">Instagram</span>
+                    </a> <span class="footer-itens-a">|</span>
+                    <a class="footer-itens-a" target="_blank" href="https://www.facebook.com/coletivolabor">
+                        <span class="footer-itens-a-normal">Facebook</span>
+                        <span class="footer-itens-a-bold b2">Facebook</span>
+                    </a><br>
+                    <a class="footer-itens-a" target="_blank" href="https://www.youtube.com/channel/UCS5zdFSSAGBpdQtzCphBG6w">
+                        <span class="footer-itens-a-normal">Youtube</span>
+                        <span class="footer-itens-a-bold b2">Youtube</span>
+                    </a>
+                </div>
+                <div class="mb-last-icone">
+                    <img src="../image/Logos/Marca_Co_Labor_transparente3.svg" style="width: 100%;" onclick="mbExploreClick()">
+                </div>
+            </div>
         </span>
 
     </div>
@@ -340,7 +364,8 @@
             reverseShowSearch();
         }
         else {
-            document.getElementById("explore").classList.add("none");
+            var e = document.getElementById("explore");
+            e.classList.add("none");
             document.getElementById("explore-arrow").classList.remove("rotate");
         }
         exploreflag = !exploreflag;
@@ -407,11 +432,11 @@
                 seedCarrossel = Math.random();
                 loopCarrossel();
             }
-        }, 5000);
+        }, 7000);
     }
     setTimeout(() => {
         loopCarrossel();
-    }, 5000);
+    }, 7000);
     function manualCarrossel(forward) {
         seedCarrossel = Math.random();
         loopCarrossel(forward);
@@ -440,6 +465,8 @@
             document.getElementById("footer").classList.add("white");
         }
     }
+
+    //MENU HAMBURGUER MOBILE
     var mbMenu = document.getElementById("mbMenu");
     function openMbMenu() {
         mbMenu.style.left = "0";
@@ -461,6 +488,7 @@
     var mbCar = document.getElementById("mb-car-symble-1");
     var mbCarInner = document.getElementById("mb-car-symble-2");
     function textColor(){
+        if(window.outerWidth > 800) return;
         var percentOffset = window.pageYOffset / (window.innerHeight - mbBox.offsetHeight - 50); //-30 margin
         imgTop.style.transform = "translateY(-" + window.pageYOffset + "px)";
         if(percentOffset < 1) {
@@ -472,6 +500,7 @@
             mb5.style.webkitTextStroke = "";
             mbSeta.style.borderBottom = "";
             mbSeta.style.borderRight = "";
+            mbSeta.style.transform = "";
             mbHLs[0].style.backgroundColor = mbHLs[1].style.backgroundColor = mbHLs[2].style.backgroundColor = "";
             mbCar.style.fill = mbCarInner.style.fill = "";
         }
@@ -481,6 +510,7 @@
             mb5.style.webkitTextStroke = "";
             mbSeta.style.borderBottom = "";
             mbSeta.style.borderRight = "";
+            mbSeta.style.transform = "";
             mbHLs[0].style.backgroundColor = mbHLs[1].style.backgroundColor = mbHLs[2].style.backgroundColor = "";
             mbCar.style.fill = mbCarInner.style.fill = "";
         }
@@ -490,11 +520,21 @@
             mb5.style.webkitTextStroke = "1px white";
             mbSeta.style.borderBottom = "1px solid white";
             mbSeta.style.borderRight = "1px solid white";
+            mbSeta.style.transform = "rotate(225deg)";
             mbHLs[0].style.backgroundColor = mbHLs[1].style.backgroundColor = mbHLs[2].style.backgroundColor = "white";
             mbCar.style.fill = "white";
             mbCarInner.style.fill = "black";
         }
     } window.onscroll = textColor;
+
+    //mobile explore click
+    var MBE_ancora = document.createElement("a");
+    function mbExploreClick() {
+        var offSet = window.innerHeight - (window.innerHeight * 0.3 > 195 ? window.innerHeight * 0.3 : 195);
+        var aux = Math.min(Math.ceil((window.pageYOffset + 0.1)/offSet), 3) % 3;
+        MBE_ancora.href = "#mb-container-" + aux;
+        MBE_ancora.click();
+    }
 </script>
 
 <script>
@@ -502,8 +542,8 @@
     var f1_1 = document.getElementById("explore");
     var f1_2 = document.getElementById("navbar");
     function f1() {
-        var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
-        var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0) * 9/16;
+        var h = window.innerHeight;
+        var w = document.body.clientWidth * 9/16;
         var marginTop = h;
         if(w < h)
             marginTop = w;
@@ -515,10 +555,48 @@
         for(var i = 0; i < cardTxts.length; i+=2)
             cardTxts[i].style.height = cardTxts[i].offsetWidth * 0.5 + "px";
     }
+
+    //js-w100 Fazer com que esses divs fiquem com w=100% e left=0
+    var jsw100_aux = 0;
+    function JSW100() {
+        var w = document.body.clientWidth;
+        var l = w > 1920 ? (w - 1920)/-2 + "px" : "-21.4285714286%";
+        var els = document.getElementsByClassName("js-w100");
+        for(var i = 0; i < els.length; i++) {
+            if(w <= 800)
+                els[i].style.width = els[i].style.left = "";
+            else {
+                els[i].style.width = w + "px";
+                els[i].style.left = l;
+            }
+        }
+        jsw100_aux = w;
+    }
+
+    //js-mte é um calculo da altura do "explore" + margin top e passada pra margin de quem tiver a classe
+    var JSMTE_e = document.getElementById("explore");
+    function JSMTE() {
+        var els = document.getElementsByClassName("js-mte");
+        function toFloat(h) {
+            return parseFloat(h.substr(0, h.length - 2));
+        }
+        for(var i = 0; i < els.length; i++)
+            if(document.body.clientWidth > 800)
+                els[i].style.marginTop = JSMTE_e.offsetHeight + toFloat(JSMTE_e.style.marginTop) + "px";
+            else
+                els[i].style.marginTop = "";
+    }
+
     var fs_aux = 0;
+    var mbFlag = document.body.clientWidth <= 800;
     function fs() {
         f1();
         f2();
+        if(!mbFlag) {
+            JSW100();
+            JSMTE();
+        }
+        mbFlag = document.body.clientWidth <= 800;
         fs_aux = document.documentElement.clientWidth;
         requestAnimationFrame(fs);
     }fs();

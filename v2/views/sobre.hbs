@@ -45,7 +45,7 @@
                     <span class="navbar-itens-a-normal">Contato</span>
                     <span class="navbar-itens-a-bold">Contato</span>
                 </a>
-                <a class="navbar-itens-a" href="/sobre">
+                <a class="navbar-itens-a ativo" href="/sobre">
                     <span class="navbar-itens-a-normal">Sobre</span>
                     <span class="navbar-itens-a-bold">Sobre</span>
                 </a>
@@ -238,9 +238,7 @@
                         </div>
                         <div class="about-pessoa-card-text">
                             <span class="aboutBold">Vitória dos Reis</span><br>
-                            -Direção de Criação<br>
-                            -Planejamento de ações<br>
-                            -Pesquisa<br>
+                            Quase psicóloga, leitora assídua quando não entediada. Insatisfeita com uma cidade sem fluxos, interessa-se na construção de outros mundos possíveis. Responsável pela gestão, curadoria e pesquisas no Co-laboratório e Co-laboração.<br>
                             <div class="footer-rede-social">
                                 <a class="footer-itens-a" target="_blank" href="https://www.instagram.com/vitoriadosreiss/">
                                     <span class="serifthis footer-itens-a-normal">Instagram</span>
@@ -278,9 +276,7 @@
                         </div>
                         <div class="about-pessoa-card-text">
                             <span class="aboutBold">Felipe Takei</span><br>
-                            -Direção de Criação<br>
-                            -Planejamento de ações<br>
-                            -Pesquisa<br>
+                            Advogado cujo objetivo é pagar o Letterboxd Pro. Perdi o edital pra entrar no Backstreet Boys. Escrevo pra tirar algo do papel algum dia. Parte do Coletivo Labor, responsável pelo setor jurídico, curador e produtor de conteúdo.<br>
                             <div class="footer-rede-social">
                                 <a class="footer-itens-a" target="_blank" href="https://www.instagram.com/felipeyasuhiro/">
                                     <span class="footer-itens-a-normal">Instagram</span>
@@ -304,9 +300,7 @@
                         </div>
                         <div class="about-pessoa-card-text">
                             <span class="aboutBold">Eduardo Azevedo</span><br>
-                            -Direção de Criação<br>
-                            -Planejamento de ações<br>
-                            -Pesquisa<br>
+                            Mais conhecido como "Dudu". Desenha desde que se entende por gente.Quase formado em Arquitetura e Urbanismo pela UFMS, nunca quis ser arquiteto. Encontrou, porém, no espaço urbano um jeito de entender o mundo. No Coletivo Labor é responsável pela direção de criação e comunicação visual. Também cuida da organização e curadoria do Co-Laboratório e de vez em quando dá uns pitacos no Co-Fab.<br>
                             <div class="footer-rede-social">
                                 <a class="footer-itens-a" target="_blank" href="https://www.instagram.com/azevedudu/">
                                     <span class="footer-itens-a-normal">Instagram</span>
@@ -338,9 +332,7 @@
                         </div>
                         <div class="about-pessoa-card-text">
                             <span class="aboutBold">Paulo Domingos</span><br>
-                            -Direção de Criação<br>
-                            -Planejamento de ações<br>
-                            -Pesquisa<br>
+                            Usuário infeliz de transporte público, uso a bicicleta sempre que possível para evitar passar raiva com ônibus.  Quase formando em Arquitetura e Urbanismo pela UFMS, formado em Eletrotécnica, mas faço freelancer de barmen e gogoboy. Diretor de criação e planejamento de ações, também estarei focado na realização de pesquisas voltadas ao Co-laboração e da gestão do Co-Fab do coletivo.<br>
                             <div class="footer-rede-social">
                                 <a class="footer-itens-a" target="_blank" href="https://www.instagram.com/paullo.domingos/">
                                     <span class="footer-itens-a-normal">Instagram</span>
@@ -360,9 +352,9 @@
                 </div>
             </div>
             <h2 id="colaboradores" class="about-h2 aboutBold">CO-LABORADORES</h2>
-            <img style="width: 30%" src="../image/Logos/coloborador_logo_brava.svg">
-            <img style="width: 30%" src="../image/Logos/coloborador_logo_algoritmo.svg">
-            <img style="width: 30%" src="../image/Logos/coloborador_logo_cartyografia.svg">
+            <img style="width: 30%" src="../image/coloborador_logo_brava.svg">
+            <img style="width: 30%" src="../image/coloborador_logo_algoritmo.svg">
+            <img style="width: 30%" src="../image/coloborador_logo_cartyografia.svg">
         </div>
 
         <div class="footer">
@@ -370,7 +362,7 @@
                 <img class="footer-img" src="../image/Logos/Marca_Co_Labor_transparente1.svg">
             </div>
             <div class="footer-box left">
-                <a class="footer-itens-a ativo" href="#">
+                <a class="footer-itens-a" href="#">
                     <span class="footer-itens-a-normal">Loja</span>
                     <span class="footer-itens-a-bold">Loja</span>
                 </a>
@@ -386,12 +378,12 @@
                 </a>
             </div>
             <div class="footer-box left">
-                <a class="footer-itens-a ativo" href="#">
+                <a class="footer-itens-a ativo" href="/sobre">
                     <span class="footer-itens-a-normal">Sobre</span>
                     <span class="footer-itens-a-bold">Sobre</span>
                 </a>
                 <br><br>
-                <a class="footer-itens-a" href="#">
+                <a class="footer-itens-a" href="/contato">
                     <span class="footer-itens-a-normal">Contato</span>
                     <span class="footer-itens-a-bold">Contato</span>
                 </a>
@@ -515,11 +507,11 @@
                 seedCarrossel = Math.random();
                 loopCarrossel();
             }
-        }, 5000);
+        }, 7000);
     }
     setTimeout(() => {
         loopCarrossel();
-    }, 5000);
+    }, 7000);
     function manualCarrossel(forward) {
         seedCarrossel = Math.random();
         loopCarrossel(forward);
@@ -579,7 +571,7 @@
         if(pessoaonhover)
             setTimeout(loopPessoaCard, 100);
         else if(clickedPessoaCard) {
-            setTimeout(loopPessoaCard, 10000);
+            setTimeout(loopPessoaCard, 15000);
             clickedPessoaCard = false;
         }
         else {
@@ -593,7 +585,7 @@
                 pessoaCards[pessoaCardIndex].style.left = "0";
                 pessoaCards[pessoaCardIndex].style.opacity = "1";
             });
-            setTimeout(loopPessoaCard, 5000);
+            setTimeout(loopPessoaCard, 10000);
         }
     }loopPessoaCard();
 </script>

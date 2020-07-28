@@ -7,8 +7,9 @@ body {
     margin: 0;
     padding: 0 10px;
     background-color: inherit;
+    transform: none;
 }
-.footer, .navbar, .navbar-margin, .explore, .explorer-btn, .carrossel-img {
+.footer, .navbar, .navbar-margin, .explore, .explorer-btn, .carrossel-img, .contato-box {
     display: none;
 }
 .carrossel {
@@ -27,8 +28,8 @@ body {
 .carrossel-img {
     position: relative;
     float: left;
-    height: 100%;
-    width: auto;
+    height: auto;
+    width: 100%;
     transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
@@ -68,6 +69,7 @@ body {
     padding-top: 30px;
     font-family: myFuturaBold;
     z-index: 3;
+    bottom: 0;
     top: 0;
     background-color: inherit;
     transition: color 200ms;
@@ -76,10 +78,11 @@ body {
     display: inline-block;
     width: 13px;
     height: 13px;
+    margin: 10px;
     border-bottom: 1px solid black;
     border-right: 1px solid black;
     transform: rotate(45deg);
-    transition: border-bottom 200ms border-right 200ms;
+    transition: border-bottom 200ms, border-right 200ms, transform 200ms;
 }
 .mb-menu {
     display: block;
@@ -107,9 +110,12 @@ body {
     text-decoration: none;
     color: black;
 }
+.cards-wrapper {
+    padding: 50px 0;
+}
 .card-box:nth-child(n) {
     width: calc(45% - 4px);
-    margin: 0 2.5%;
+    margin: 10px 2.5%;
     transform: none;
     vertical-align: top;
 }
@@ -132,6 +138,48 @@ body {
 .mb-container {
     display: block;
     width: 100%;
-    height: calc(100vh - 177px);
+    padding-top: 195px;
+    height: calc(100vh - 195px);
+    transform: translateY(-195px);
+}
+.mb-footer {
+    color: white;
+    display: block;
+}
+.footer-text, .footer-input, .footer-itens-a {
+    color:white;
+}
+.footer-itens-a {
+    font-size: .8em;
+    margin-right: 6px;
+}
+.barra {
+    border-bottom: 2px solid white;
+}
+.b.mb-footer, .b.footer-text, .b.footer-input, .b.footer-itens-a {
+    color:black;
+}
+.b.barra {
+    border-bottom: 2px solid black;
+}
+.mb-cadastro {
+    width: 250px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+.mb-contato {
+    margin-top: 80px;
+    text-align: center;
+}
+.mb-last-icone {
+    position: absolute;
+    filter: invert(1);
+    left: 50%;
+    bottom: 0;
+    width: 100px;
+    transform: translate(-50%);
+}
+.b.mb-last-icone {
+    filter: none;
 }
 }

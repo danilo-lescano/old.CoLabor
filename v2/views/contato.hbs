@@ -3,7 +3,9 @@
 <head>
     <title>Co-Labor</title>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/layout.css"></link>
+    <link rel="stylesheet" href="../css/layout2.css"></link>
 </head>
 <body>
     <div class="inner-body">
@@ -23,7 +25,7 @@
                     <span class="navbar-itens-a-normal">Produtos</span>
                     <span class="navbar-itens-a-bold">Produtos</span>
                 </a>
-                <a class="navbar-itens-a" href="/contato">
+                <a class="navbar-itens-a ativo" href="/contato">
                     <span class="navbar-itens-a-normal">Contato</span>
                     <span class="navbar-itens-a-bold">Contato</span>
                 </a>
@@ -37,6 +39,39 @@
                 </a>
             </div>
         </div>
+
+    
+        <div class="mb-navbar">
+            <div class="mb-hamburguer" onclick="openMbMenu()">
+                <span class="mb-hamburguer-line"></span>
+                <span class="mb-hamburguer-line"></span>
+                <span class="mb-hamburguer-line"></span>
+            </div>
+            <img id="mb-img-top" class="mb-title" src="image/header_Prancheta 1-svg.svg">
+            <svg id="mb-car-symble-1" data-name="Camada 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" style="position: absolute; top: 50%; transform: translate(0%, -50%); right: 0; width: 70px; transition: fill 200ms;">
+                        <defs><style>#mb-car-symble-1 { fill: #FEBA12; }</style></defs><path class="cls-1" d="M796.59,541.41C851.32,488.19,906,448.27,960.76,418.83,900,384,839.25,367.1,778.49,359.3c17.21-47.54,34.42-92.39,51.63-135.86a1094.55,1094.55,0,0,0-182.84,63c-28.48-50.3-57-101.19-85.44-157.48-23.71,46.83-47.42,97.86-71.13,150.73-49.21-31.46-98.41-68.83-147.61-111q1.45,133.05,2.93,254.71C285,437.33,224,444,162.93,434.72c30.24,39.39,60.48,75.77,90.73,108.36-44.81,28.17-89.62,48.2-134.42,59.25C196.78,662,274.32,689.92,351.86,706.14Q333.58,808.29,315.3,898.48C353.39,881.24,391.49,862,429.58,840c12.78,36.51,25.55,73.18,38.33,111,41.62-54,83.24-117.54,124.86-184.78,71.87,27.7,143.75,65.73,215.62,111-9.28-62.55-18.55-123.34-27.83-181.89,42.23.43,84.46,4.93,126.69,15.59C870.37,650.22,833.48,592.52,796.59,541.41Z"></path><svg id="mb-car-symble-2" data-name="Camada 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" style="
+                        fill: black; transition: fill 200ms;
+                    "><defs><style>#mb-car-symble-2 { fill: black; }</style></defs><path class="cls-1" d="M665.81,593.74c.82,6.18,1.5,12.39,2.48,18.55,1.12,7.12-.17,8.48-7.45,8.87a52.17,52.17,0,0,0-11.59,2.34c-8.94,2.6-17.69,3.75-26.46-.73-3.92-2-5-4.8-4.38-9,3.37-22.45,7.42-44.83,9.55-67.4,1.15-12.2-.89-24.73-1.87-37.08-.36-4.48-3.13-5.78-7.6-4.26Q590.8,514.42,563.15,524a42.6,42.6,0,0,0-8.33,4.28,4.54,4.54,0,0,0-1.66,3.09c-1.12,12.29-2.31,24.58-3.09,36.89-1.08,16.93-1.58,33.89-2.79,50.8-1,13.73-2.7,27.41-4,41.12-.57,6.13-5.21,9.4-11.49,8.77-13-1.31-22.32-7.39-27.06-19.7a13.46,13.46,0,0,1-.69-7.64c5.25-21.07,9.32-42.24,9.89-64.1.23-8.79,3.29-17.47,4.65-26.27a94.8,94.8,0,0,0,1-15.62c0-1.18-2.14-3.11-3.55-3.39-11.65-2.25-23.36-4.14-35-6.28a40.05,40.05,0,0,1-8-2.4c-4.91-2-7-1.14-8.29,4.19-2.84,12.22-5.33,24.53-8.35,36.71-1.76,7.07-4.16,14-6.45,20.93-2.78,8.44-6,16.73-8.52,25.24-1.3,4.37-3.49,5.79-8,6.58-13.15,2.29-24.74-1.23-36-7.45-5.76-3.17-6.33-4.18-3.6-10.18,5.48-12,11.51-23.89,16.14-36.25,4.93-13.19,8.56-26.87,12.64-40.38a7,7,0,0,0-.12-4.54c-1.33-2.87-1.47-5.06,1-7.5s1.68-4.66-1.76-5.68c-1.68-.49-3.38-.93-5-1.48-4.94-1.64-6.4-4.65-5.44-9.67a109.49,109.49,0,0,0,1.21-11.9c.67-8.68,1.22-17.37,1.92-26.05.23-2.82-.6-4.43-3.44-5.58-1.67-.68-2.68-2.95-4-4.51,1.67-1.32,3.15-3.33,5-3.83,5.51-1.47,11.25-2.09,16.78-3.5,13.53-3.44,27.16-6.62,40.44-10.86C484.3,423,499,417,514,411.79a15,15,0,0,1,8.15-.4c16.23,4.13,32.26,9.17,48.6,12.8,22.63,5,45.48,9.05,68.23,13.56,5.24,1,10.4,2.46,15.67,3.3,1.61.25,3.46-.79,5.17-1.34s4.13-2.12,4.65-1.61A98.79,98.79,0,0,1,674,449a48.58,48.58,0,0,1,4.3,7.66c3.05,6,6.27,12,8.9,18.17,1.42,3.36.15,5.83-4,6.86a169.9,169.9,0,0,0-19.83,6.2c-1.41.55-2.7,3.56-2.66,5.41.38,18.51.72,37,1.75,55.51.67,12.19,2.48,24.32,3.72,36.48.28,2.78.28,5.59.41,8.38ZM518.63,419.46c-5.83,1.56-11.91,3-17.87,4.82-15.15,4.65-30.23,9.56-45.39,14.17-7.67,2.33-15.49,4.19-23.2,6.4-1,.28-2.32,1.39-2.38,2.2s1,2.1,1.91,2.69a21.16,21.16,0,0,0,3.9,1.5c14.68,5.94,29.47,11.62,44,17.9,15,6.51,29.71,13.93,44.81,20.31,7.94,3.35,16.25,7.17,25.31,4,15.58-5.49,31.23-10.82,46.59-16.91,17-6.74,33.71-14.21,50.48-21.51,1.55-.68,2.62-2.45,3.91-3.72-1.4-1.08-2.66-2.79-4.23-3.16-12.42-2.9-24.89-5.57-37.35-8.27-19.8-4.3-39.62-8.48-59.39-12.88C539.54,424.71,529.43,422.09,518.63,419.46Zm-99.31,68.68c1.5,3,2.45,7.18,5.06,9.45,2.82,2.46,7.19,3.15,10.91,4.57q12.9,4.92,25.84,9.8c5.51,2.09,10.87,4.94,16.58,6.08,15,3,30.16,5.29,45.26,7.87,7.21,1.23,11.32-1.25,13.33-8,.45-1.5,1.16-2.93,1.57-4.44,2.65-9.68,3.4-9.57-7-14.43-11.35-5.28-23.22-9.49-34.43-15.05-22.5-11.18-44.74-22.83-69.6-28.16-3.62-.77-5.24-.17-5.47,3.74C420.81,468.7,420.06,477.86,419.32,488.14Zm231.09,28.55-.25,0c0-4.71.12-9.43,0-14.14-.23-7.55-2.63-8.88-9.56-5.54a23.4,23.4,0,0,1-3.38,1.36c-3.35,1-4.08,3.35-3.74,6.51,1.06,9.67,2.49,19.33,2.9,29a152.19,152.19,0,0,1-1,25.07c-1.95,15.57-4.17,31.14-7.19,46.54-2.56,13.09-.57,13.09,12.85,12.8a10.34,10.34,0,0,0,1.56-.17c5.63-1,7-3.13,5.83-8.72a22,22,0,0,1-.79-6.2c.69-8.34,1.61-16.66,2.5-25,.77-7.11,2.38-14.21,2.29-21.29C652.28,543.52,651.14,530.11,650.41,516.69ZM416.79,609.34c.75-.62,2.94-1.55,3.68-3.15,4-8.67,8.06-17.37,11.43-26.31,4.42-11.74,8.27-23.7,12.28-35.59q3.82-11.38,7.4-22.84c1-3.13.09-5.32-3.37-6.48-2.09-.7-3.86-2.31-5.86-3.38-5.52-2.94-8.9-1.24-10.06,4.93a49.43,49.43,0,0,1-1.19,5.09q-6.21,20.8-12.5,41.59a72.58,72.58,0,0,1-3.35,9.34c-3.49,7.5-7.7,14.71-10.73,22.39S407.13,609.53,416.79,609.34ZM538.53,540.7c-.16-6.82-1-8.72-4.26-8.61-4.18.15-7.13,4.09-7.07,9.46,0,.52.18,1.05.15,1.56a63.25,63.25,0,0,1-.49,6.75c-1.48,8.77-3.22,17.5-4.61,26.28-2.77,17.56-5.62,35.11-7.91,52.73a77.66,77.66,0,0,0,0,20.15c.29,2.16,4.52,5.11,7.13,5.3,3.15.23,7.73-.28,8.53-5.15,1.14-6.87,2.52-13.74,3-20.67.78-10.45.68-21,1.35-31.41C535.63,578.28,537.14,559.49,538.53,540.7Zm137.09-75.77c-2.33,4.54-4.34,8.43-6.5,12.62,5,1.15,7.82-1.42,9.37-4.63C679.88,470,678.9,466.91,675.62,464.93Zm-4.11-7.56a48,48,0,0,0-5.81-4.86c-.21-.14-1.93,2.13-3,3.29a43.06,43.06,0,0,0,5.07,4.14C668.19,460.17,669.6,458.73,671.51,457.37Z"></path><path class="cls-1" d="M471.67,503.82c-1.94.6-4.15,2.11-5.78,1.63-7.79-2.3-15.51-4.94-23.06-8-1.53-.62-2.2-3.42-3.27-5.21,1.71-.86,3.42-2.42,5.13-2.43,2.52,0,5.1.93,7.55,1.76a133,133,0,0,1,13.64,5.13c2.28,1.06,4.05,3.23,6.05,4.9Z"></path><path class="cls-1" d="M470.58,488.47c0-6.12,2.3-7.64,6.48-6.18,3.43,1.2,7,2,10.3,3.55A12.61,12.61,0,0,1,492,490c.61.88.61,3.2,0,3.72a5.85,5.85,0,0,1-4.2.74,91.49,91.49,0,0,1-12.5-2.81C473.2,491,471.55,489.18,470.58,488.47Z"></path>
+                </svg>
+            </svg>
+        </div>
+        <div id="mbMenu" class="mb-menu">
+            <div class="mb-navbar dois">
+                <div class="mb-hamburguer" onclick="closeMbMenu()">
+                    <span class="mb-hamburguer-line"></span>
+                    <span class="mb-hamburguer-line"></span>
+                    <span class="mb-hamburguer-line"></span>
+                </div>
+                <img class="mb-title" src="image/header_Prancheta 1-svg.svg">
+            </div>
+            <div class="mb-items-menu">
+                <a href="#" class="mb-item">PRODUTOS</a><br>
+                <a href="#" class="mb-item">AGENDA</a><br>
+                <a href="/contato" class="mb-item">CONTATO</a><br>
+                <a href="/sobre" class="mb-item">QUEM SOMOS</a>
+            </div>
+        </div>
+
 
         <div class="contato-box">
             <h2 class="contato-title">CONTATO</h2>
@@ -119,6 +154,39 @@
                 </a>
             </div>
         </div>
+        <div class="b mb-footer" style="height: 70vh; padding-top: 30vh;">
+            <div class="b mb-cadastro">
+                <span class="b footer-text">Faça seu Cadastro:</span>
+                <br><br>
+                <input class="b footer-input barra" placeholder="Email" type="text">
+                <br><br>
+                <input class="b footer-input barra" placeholder="Senha" type="password">
+                <br><br>
+                <a class="b footer-itens-a ativo" style="float: right;" href="#">
+                    <span class="b footer-itens-a-normal" style="font-family: myFutura; font-size: 1.2em;">OK</span>
+                    <span class="b footer-itens-a-bold b2" style="font-family: myFutura; font-size: 1.2em;">OK</span>
+                </a>
+            </div>
+            <div class="b mb-contato">
+                Entre em contato<br>
+                <span style="font-weight: bold;">coletivolabor@gmail.com</span><br><br>
+                    <a class="b footer-itens-a" target="_blank" href="https://www.instagram.com/coletivolabor/">
+                    <span class="b footer-itens-a-normal">Instagram</span>
+                    <span class="b footer-itens-a-bold b2">Instagram</span>
+                </a> <span class="b footer-itens-a">|</span>
+                <a class="b footer-itens-a" target="_blank" href="https://www.facebook.com/coletivolabor">
+                    <span class="b footer-itens-a-normal">Facebook</span>
+                    <span class="b footer-itens-a-bold b2">Facebook</span>
+                </a><br>
+                <a class="b footer-itens-a" target="_blank" href="https://www.youtube.com/channel/UCS5zdFSSAGBpdQtzCphBG6w">
+                    <span class="b footer-itens-a-normal">Youtube</span>
+                    <span class="b footer-itens-a-bold b2">Youtube</span>
+                </a>
+            </div>
+            <div class="b mb-last-icone">
+                <img src="../image/Logos/Marca_Co_Labor_transparente3.svg" style="width: 100%;" onclick="mbExploreClick()">
+            </div>
+        </div>
 
     </div>
 </body>
@@ -158,40 +226,13 @@
         document.getElementById("exploreForm").classList.add("none");
         document.getElementById("exploreBtns").classList.remove("none");
     }
-
-    //CARROSSEL LOOP
-    var carrossel = document.getElementById("carrossel");
-    var carrosselIndex = 0;
-    var carrosselBalls = [];
-    var seedCarrossel = Math.random();
-    for(var i=0; i<carrossel.childElementCount; i++) {
-        carrosselBalls[i] = document.createElement("div");
-        carrosselBalls[i].classList.add("carrossel-ball");
-        document.getElementById("carrossel-balls").appendChild(carrosselBalls[i]);
+    
+    //MENU HAMBURGUER MOBILE
+    var mbMenu = document.getElementById("mbMenu");
+    function openMbMenu() {
+        mbMenu.style.left = "0";
     }
-    carrosselBalls[0].classList.add("blackBG");
-    function loopCarrossel(forward) {
-        carrosselBalls[carrosselIndex].classList.remove("blackBG");
-        if(forward == undefined || (forward != undefined && forward))
-            carrosselIndex = ++carrosselIndex % carrossel.childElementCount;
-        else
-            carrosselIndex = carrosselIndex == 0 ? carrossel.childElementCount - 1 : carrosselIndex - 1;
-        var X = (100/carrossel.childElementCount) * carrosselIndex;
-        carrossel.style.transform = "translateX(-" + X + "%)";
-        carrosselBalls[carrosselIndex].classList.add("blackBG");
-        let seed = seedCarrossel;
-        setTimeout(() => {
-            if(seed == seedCarrossel) {
-                seedCarrossel = Math.random();
-                loopCarrossel();
-            }
-        }, 5000);
-    }
-    setTimeout(() => {
-        loopCarrossel();
-    }, 5000);
-    function manualCarrossel(forward) {
-        seedCarrossel = Math.random();
-        loopCarrossel(forward);
+    function closeMbMenu() {
+        mbMenu.style.left = "-100%";
     }
 </script>
